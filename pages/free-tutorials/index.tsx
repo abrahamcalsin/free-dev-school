@@ -1,9 +1,43 @@
 import * as React from "react";
-import { Box, Grid, Heading, Text } from "@chakra-ui/react";
+import { GetServerSidePropsResult } from "next";
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  Box,
+  Grid,
+  Heading,
+  Spinner,
+  Text,
+} from "@chakra-ui/react";
+import { ApolloClient, InMemoryCache, useQuery } from "@apollo/client";
+import cloneDeep from "lodash.clonedeep";
 import { MainLayout } from "~/layouts";
 import { VideoCard } from "~/components/video-card";
+import { freeTutorialsQuery } from "~/gql/queries";
 
 const FreeTutorials = () => {
+  const { loading, data, error } = useQuery(freeTutorialsQuery);
+
+  if (loading)
+    return (
+      <MainLayout>
+        <Spinner size="lg" />
+      </MainLayout>
+    );
+
+  if (error)
+    return (
+      <MainLayout>
+        <Alert status="error">
+          <AlertIcon />
+          <AlertTitle>{error.message}</AlertTitle>
+        </Alert>
+      </MainLayout>
+    );
+
+  const freeTutorials = cloneDeep(data.freeTutorials);
+
   return (
     <MainLayout>
       <Box
@@ -39,78 +73,50 @@ const FreeTutorials = () => {
         alignItems="start"
         gap={{ base: "3", sm: "4" }}
       >
-        <VideoCard
-          channelName="midudev"
-          videoName="🙀 ¡Con sólo CSS! IMPRESIONANTE efecto de OLAS en letras 🌊"
-          videoId="Bfvfi6Cr7JY"
-          src="https://i.ytimg.com/vi/Bfvfi6Cr7JY/sddefault.jpg"
-          videoHost="youtube"
-          channelId="UC8LeXCWOalN8SxlrPcG-PaQ"
-        />
-        <VideoCard
-          channelName="GoncyPozzo"
-          videoName="Haciendo landing pages gratis para ONGs (Adopcanem) con React + Next.js + ChakraUI"
-          videoId="1487188659"
-          videoHost="twitch"
-          channelId="goncypozzo"
-        />
-        <VideoCard
-          channelName="GoncyPozzo"
-          videoName="Agregá una API a tus proyectos hosteados en Vercel"
-          videoId="1516539987"
-          videoHost="twitch"
-          channelId="goncypozzo"
-        />
-        <VideoCard
-          channelName="midudev"
-          videoName="¡PROGRAMANDO TICKET de la MIDUCONF con JAVASCRIPT"
-          videoId="1545457631"
-          videoHost="twitch"
-          channelId="midudev"
-        />
-        <VideoCard
-          channelName="Gentleman Programming"
-          videoName="Cómo estructurar tu project de ReactJs? Aplicamos Clean Architecture en Front End - #part1"
-          videoId="5LqhlCd2_nE"
-          src="https://i.ytimg.com/vi/5LqhlCd2_nE/sddefault.jpg"
-          videoHost="youtube"
-          channelId="UCbx_d228PdYwgB4Jz202SIQ"
-        />
-        <VideoCard
-          channelName="Gentleman Programming"
-          videoName="Estructuramos en vivo un project de React usando conceptos de Clean Architecture - #part2"
-          videoId="XEcZaKK38fg"
-          src="https://i.ytimg.com/vi/XEcZaKK38fg/sddefault.jpg"
-          videoHost="youtube"
-          channelId="UCbx_d228PdYwgB4Jz202SIQ"
-        />
-        <VideoCard
-          channelName="Fazt"
-          videoName="JSDoc, Documentación en Javascript | Curso Práctico"
-          videoId="r0H-acWQS6c"
-          src="https://i.ytimg.com/vi/r0H-acWQS6c/sddefault.jpg"
-          videoHost="youtube"
-          channelId="UCX9NJ471o7Wie1DQe94RVIg"
-        />
-        <VideoCard
-          channelName="Fazt"
-          videoName="Editores de Código & IDEs en la nube"
-          videoId="JUtHx3VYBqc"
-          src="https://i.ytimg.com/vi/JUtHx3VYBqc/sddefault.jpg"
-          videoHost="youtube"
-          channelId="UCX9NJ471o7Wie1DQe94RVIg"
-        />
-        {/* <VideoCard
-          channelName=""
-          videoName=""
-          videoId=""
-          src=""
-          videoHost=""
-          channelId=""
-        /> */}
+        {freeTutorials
+          .sort(
+            (video1: any, video2: any) =>
+              new Date(video2.yearOfPublication).getTime() -
+              new Date(video1.yearOfPublication).getTime()
+          )
+          .map((video: any) => {
+            return (
+              video.state === "publish" && (
+                <VideoCard
+                  key={video.id}
+                  channelName={video.tutorName}
+                  videoName={video.videoName}
+                  videoId={video.videoId}
+                  src={video.linkVideoThumbnail}
+                  videoHost={video.videoHost}
+                  channelId={video.tutorChannelId}
+                  dateOfPublication={video.yearOfPublication}
+                />
+              )
+            );
+          })}
       </Grid>
     </MainLayout>
   );
 };
+
+export async function getServerSideProps(): Promise<
+  GetServerSidePropsResult<any>
+> {
+  const client = new ApolloClient({
+    uri: process.env.API_URI,
+    cache: new InMemoryCache(),
+  });
+
+  await client.query({
+    query: freeTutorialsQuery,
+  });
+
+  return {
+    props: {
+      apolloClientState: client.cache.extract(),
+    },
+  };
+}
 
 export default FreeTutorials;

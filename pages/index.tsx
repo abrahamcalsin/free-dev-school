@@ -1,10 +1,46 @@
-import type { NextPage } from "next";
+import type { GetServerSidePropsResult, NextPage } from "next";
 import RouterLink from "next/link";
-import { Box, Grid, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  Box,
+  Grid,
+  Heading,
+  Link,
+  Spinner,
+  Text,
+} from "@chakra-ui/react";
+import { useQuery, ApolloClient, InMemoryCache } from "@apollo/client";
+import cloneDeep from "lodash.clonedeep";
 import { MainLayout } from "~/layouts";
 import { VideoCard } from "~/components/video-card";
+import { freeCoursesQuery } from "~/gql/queries";
 
 const Home: NextPage = () => {
+  const { loading, data, error } = useQuery(freeCoursesQuery);
+
+  if (loading) {
+    return (
+      <MainLayout>
+        <Spinner size="lg" />
+      </MainLayout>
+    );
+  }
+
+  if (error) {
+    return (
+      <MainLayout>
+        <Alert status="error">
+          <AlertIcon />
+          <AlertTitle>{error.message}</AlertTitle>
+        </Alert>
+      </MainLayout>
+    );
+  }
+
+  const freeCourses = cloneDeep(data.freeCourses);
+
   return (
     <MainLayout>
       <Box textAlign="center" maxW="full" w="4xl" mx="auto">
@@ -94,46 +130,30 @@ const Home: NextPage = () => {
             alignItems="start"
             gap={{ base: "3", sm: "4" }}
           >
-            <VideoCard
-              channelName="Gentleman Programming"
-              videoName="Creamos una app en React ! buenas prácticas, clean architecture, redux, context y Typescript !"
-              videoId="p9PAmqpCWgA"
-              src="https://i.ytimg.com/vi/p9PAmqpCWgA/sddefault.jpg"
-              videoHost="youtube"
-              channelId="UCbx_d228PdYwgB4Jz202SIQ"
-              dateOfPublication="Sep 4, 2022"
-              publicationStatus="recent"
-            />
-            <VideoCard
-              channelName="midulive"
-              videoName="CURSO de NEXT.JS 12 desde CERO y con dos proyectos prácticos"
-              videoId="pFT8wD2uRSE"
-              src="https://i.ytimg.com/vi/pFT8wD2uRSE/sddefault.jpg"
-              videoHost="youtube"
-              channelId="UC8LeXCWOalN8SxlrPcG-PaQ"
-              dateOfPublication="Aug 15, 2022"
-              publicationStatus="recent"
-            />
-            <VideoCard
-              channelName="Fazt"
-              videoName="Curso de Reactjs desde Cero para principiantes 2022"
-              videoId="rLoWMU4L_qE"
-              src="https://i.ytimg.com/vi/rLoWMU4L_qE/sddefault.jpg"
-              videoHost="youtube"
-              channelId="UCX9NJ471o7Wie1DQe94RVIg"
-              dateOfPublication="Aug 11, 2022"
-              publicationStatus="recent"
-            />
-            <VideoCard
-              channelName="Vida MRR - Diseño y desarrollo web"
-              videoName="GUÍA COMPLETA DE GRID ANIMADA | CURSO CSS"
-              videoId="Fj6BGtNvXIc"
-              src="https://i.ytimg.com/vi/Fj6BGtNvXIc/sddefault.jpg"
-              videoHost="youtube"
-              channelId="UCOD6LXgeBoeiUZTsPLdG-0g"
-              dateOfPublication="Jul 11, 2022"
-              publicationStatus="recent"
-            />
+            {freeCourses
+              .sort(
+                (video1: any, video2: any) =>
+                  new Date(video2.yearOfPublication).getTime() -
+                  new Date(video1.yearOfPublication).getTime()
+              )
+              .map((course: any) => {
+                return (
+                  course.state === "publish" &&
+                  course.publicationStatus === "recent" && (
+                    <VideoCard
+                      key={course.id}
+                      channelName={course.tutorName}
+                      videoName={course.courseName}
+                      videoId={course.courseId}
+                      src={course.linkCourseThumbnail}
+                      videoHost={course.courseHost}
+                      channelId={course.tutorChannelId}
+                      dateOfPublication={course.yearOfPublication}
+                      publicationStatus={course.publicationStatus}
+                    />
+                  )
+                );
+              })}
           </Grid>
         </Box>
       </Box>
@@ -176,5 +196,24 @@ const Home: NextPage = () => {
     </MainLayout>
   );
 };
+
+export async function getServerSideProps(): Promise<
+  GetServerSidePropsResult<any>
+> {
+  const client = new ApolloClient({
+    uri: process.env.API_URI,
+    cache: new InMemoryCache(),
+  });
+
+  await client.query({
+    query: freeCoursesQuery,
+  });
+
+  return {
+    props: {
+      apolloClientState: client.cache.extract(),
+    },
+  };
+}
 
 export default Home;
