@@ -10,12 +10,13 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import { ApolloClient, InMemoryCache, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import cloneDeep from "lodash.clonedeep";
 import { MainLayout } from "~/layouts";
 import { SearchBox } from "~/components/search-box";
 import { VideoCard } from "~/components/video-card";
 import { freeCoursesQuery } from "~/gql/queries";
+import { createApolloClient } from "~/lib/apollo-client";
 
 const FreeCourses = () => {
   const { loading, data, error } = useQuery(freeCoursesQuery);
@@ -102,10 +103,7 @@ const FreeCourses = () => {
 export async function getServerSideProps(): Promise<
   GetServerSidePropsResult<any>
 > {
-  const client = new ApolloClient({
-    uri: process.env.API_URI,
-    cache: new InMemoryCache(),
-  });
+  const client = createApolloClient();
 
   await client.query({
     query: freeCoursesQuery,

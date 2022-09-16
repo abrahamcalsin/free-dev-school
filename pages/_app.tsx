@@ -1,25 +1,15 @@
 import "../styles/globals.css";
 import * as React from "react";
 import type { AppProps } from "next/app";
+import { ApolloProvider } from "@apollo/client";
 import { ChakraProvider } from "@chakra-ui/react";
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { mainTheme } from "~/themes/main";
 import { Navbar } from "~/components/navbar";
+import { createApolloClient } from "~/lib/apollo-client";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const apolloClient = React.useMemo(() => {
-    const cache = new InMemoryCache();
-
-    if (pageProps.apolloClientState) {
-      cache.restore(pageProps.apolloClientState);
-    }
-
-    const client = new ApolloClient({
-      uri: process.env.API_URI,
-      cache: cache,
-    });
-
-    return client;
+    return createApolloClient(pageProps.apolloClientState);
   }, [pageProps.apolloClientState]);
 
   return (
