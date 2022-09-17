@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { Box, GridItem, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { BsImageAlt, BsTwitch, BsYoutube } from "react-icons/bs";
+import DateFormat from "~/components/date-format";
 
 interface VideoCardProps {
   channelName?: string;
@@ -118,6 +119,8 @@ export function VideoCard(props: VideoCardProps) {
                 : `https://www.twitch.tv/videos/${videoId}`
             }`}
             isExternal
+            display="block"
+            mb="2"
           >
             <Heading
               as="h3"
@@ -128,16 +131,7 @@ export function VideoCard(props: VideoCardProps) {
               {videoName}
             </Heading>
           </Link>
-          <Text
-            as="span"
-            display="block"
-            fontSize={{ base: "x-small", sm: "xs" }}
-            mt="2"
-            fontWeight="semibold"
-            textColor="gray.400"
-          >
-            {dateOfPublication}
-          </Text>
+          {dateOfPublication && <DateFormat videoDate={dateOfPublication} />}
         </Box>
       </Box>
     </GridItem>
