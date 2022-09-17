@@ -1,5 +1,4 @@
-/* eslint-disable react/no-children-prop */
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-element, react/no-children-prop */
 
 import * as React from "react";
 import { useQuery } from "@apollo/client";
