@@ -42,6 +42,10 @@ const FreeCourses = () => {
 
   const freeCourses = cloneDeep(data.freeCourses);
 
+  const publicVideos = freeCourses.filter(
+    (course: any) => course.state === "publish"
+  );
+
   return (
     <MainLayout>
       <Box textAlign="center" maxW="full" w="3xl" mx="auto">
@@ -51,6 +55,13 @@ const FreeCourses = () => {
           mb={{ base: "3", sm: "4" }}
           fontWeight="extrabold"
         >
+          <Text
+            as="span"
+            bgGradient="linear(to-l, #4299E1, #39BBE4)"
+            bgClip="text"
+          >
+            {publicVideos.length}
+          </Text>{" "}
           Cursos de programación gratuitos
         </Heading>
         <Text

@@ -11,7 +11,7 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import { useQuery, ApolloClient, InMemoryCache } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import cloneDeep from "lodash.clonedeep";
 import { MainLayout } from "~/layouts";
 import { VideoCard } from "~/components/video-card";
@@ -73,8 +73,9 @@ const Home: NextPage = () => {
           }}
         >
           Los cursos y tutoriales que se publican en esta web fueron recopilados
-          inicialmente de plataformas como YouTube y Twitch, donde hay más
-          contenido gratuito sobre desarrollo de software.{" "}
+          inicialmente de plataformas como <strong>YouTube</strong> y{" "}
+          <strong>Twitch</strong>, donde hay más contenido gratuito sobre
+          desarrollo de software.{" "}
           <RouterLink href="/about-us">
             <Link
               textColor="blue.400"
