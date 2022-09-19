@@ -1,5 +1,5 @@
-/* eslint-disable react/no-children-prop */
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-element, react/no-children-prop */
+
 import * as React from "react";
 import { useQuery } from "@apollo/client";
 import { HiSearch } from "react-icons/hi";
@@ -27,6 +27,7 @@ export function SearchBox(props: SearchBoxProps) {
   const { loading, data, error } = useQuery(freeCoursesQuery);
 
   const [text, setText] = React.useState<string>("");
+
   const [suggestions, setSuggestions] = React.useState<string[]>([]);
 
   const onChangeHandler = (text: any) => {
