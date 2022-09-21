@@ -1,4 +1,3 @@
-import * as React from "react";
 import { GetServerSidePropsResult } from "next";
 import {
   Alert,
@@ -77,7 +76,14 @@ const FreeCourses = () => {
           mejores cursos de programación gratuitos.
         </Text>
       </Box>
-      <SearchBox label="Buscar curso..." />
+      <SearchBox
+        label="Buscar curso por tecnologia..."
+        data={data.freeCourses}
+        itemFieldFilterName="courseName"
+        itemFieldId="courseId"
+        itemFieldHost="courseHost"
+        itemFieldName="courseName"
+      />
       <Grid
         templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
         alignItems="start"
@@ -86,8 +92,8 @@ const FreeCourses = () => {
         {freeCourses
           .sort(
             (video1: any, video2: any) =>
-              new Date(video2.yearOfPublication).getTime() -
-              new Date(video1.yearOfPublication).getTime()
+              new Date(video2.dateOfPublication).getTime() -
+              new Date(video1.dateOfPublication).getTime()
           )
           .map((course: any) => {
             return (
@@ -100,7 +106,7 @@ const FreeCourses = () => {
                   src={course.linkCourseThumbnail}
                   videoHost={course.courseHost}
                   channelId={course.tutorChannelId}
-                  dateOfPublication={course.yearOfPublication}
+                  dateOfPublication={course.dateOfPublication}
                   publicationStatus={course.publicationStatus}
                 />
               )

@@ -112,14 +112,12 @@ export function SearchBox(props: SearchBoxProps) {
                     isExternal
                   >
                     <Flex gap="4" alignItems="center">
-                      <>
-                        {suggestion[itemFieldHost] === "youtube" && (
-                          <BsYoutube color="#C53030" size={20} />
-                        )}
-                        {suggestion[itemFieldHost] === "twitch" && (
-                          <BsTwitch color="#8b43f7" size={20} />
-                        )}
-                      </>
+                      {suggestion[itemFieldHost] === "youtube" && (
+                        <BsYoutube color="#C53030" size={20} />
+                      )}
+                      {suggestion[itemFieldHost] === "twitch" && (
+                        <BsTwitch color="#8b43f7" size={20} />
+                      )}
                       <Box>
                         <Heading
                           as="h2"
