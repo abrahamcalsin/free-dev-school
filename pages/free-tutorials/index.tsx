@@ -1,4 +1,3 @@
-import * as React from "react";
 import { GetServerSidePropsResult } from "next";
 import {
   Alert,
@@ -16,6 +15,7 @@ import { MainLayout } from "~/layouts";
 import { VideoCard } from "~/components/video-card";
 import { freeTutorialsQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
+import { SearchBox } from "~/components/search-box";
 
 const FreeTutorials = () => {
   const { loading, data, error } = useQuery(freeTutorialsQuery);
@@ -80,6 +80,14 @@ const FreeTutorials = () => {
           tutoriales de programación gratuitos.
         </Text>
       </Box>
+      <SearchBox
+        label="Buscar tutorial por tecnologia..."
+        data={data.freeTutorials}
+        itemFieldFilterName="videoName"
+        itemFieldId="videoId"
+        itemFieldHost="videoHost"
+        itemFieldName="videoName"
+      />
       <Grid
         templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
         alignItems="start"
@@ -88,8 +96,8 @@ const FreeTutorials = () => {
         {freeTutorials
           .sort(
             (video1: any, video2: any) =>
-              new Date(video2.yearOfPublication).getTime() -
-              new Date(video1.yearOfPublication).getTime()
+              new Date(video2.dateOfPublication).getTime() -
+              new Date(video1.dateOfPublication).getTime()
           )
           .map((video: any) => {
             return (
@@ -102,7 +110,7 @@ const FreeTutorials = () => {
                   src={video.linkVideoThumbnail}
                   videoHost={video.videoHost}
                   channelId={video.tutorChannelId}
-                  dateOfPublication={video.yearOfPublication}
+                  dateOfPublication={video.dateOfPublication}
                 />
               )
             );
