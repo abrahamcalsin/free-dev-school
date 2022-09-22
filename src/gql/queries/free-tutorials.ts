@@ -10,8 +10,8 @@ const freeTutorialsQuery = gql`
       videoHost
       tutorChannelId
       videoName
+      dateOfPublication
       state
-      yearOfPublication
     }
   }
 `;

@@ -10,7 +10,7 @@ const freeCoursesQuery = gql`
       linkCourseThumbnail
       courseHost
       tutorChannelId
-      yearOfPublication
+      dateOfPublication
       publicationStatus
       state
     }

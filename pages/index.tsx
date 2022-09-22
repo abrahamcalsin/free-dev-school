@@ -135,8 +135,8 @@ const Home: NextPage = () => {
             {freeCourses
               .sort(
                 (video1: any, video2: any) =>
-                  new Date(video2.yearOfPublication).getTime() -
-                  new Date(video1.yearOfPublication).getTime()
+                  new Date(video2.dateOfPublication).getTime() -
+                  new Date(video1.dateOfPublication).getTime()
               )
               .map((course: any) => {
                 return (
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                       src={course.linkCourseThumbnail}
                       videoHost={course.courseHost}
                       channelId={course.tutorChannelId}
-                      dateOfPublication={course.yearOfPublication}
+                      dateOfPublication={course.dateOfPublication}
                       publicationStatus={course.publicationStatus}
                     />
                   )

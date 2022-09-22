@@ -1,7 +1,4 @@
 /* eslint-disable @next/next/no-img-element, react/no-children-prop */
-
-import * as React from "react";
-import { useQuery } from "@apollo/client";
 import { HiSearch } from "react-icons/hi";
 import { BsTwitch, BsYoutube } from "react-icons/bs";
 import {
@@ -14,107 +11,33 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import { freeCoursesQuery } from "~/gql/queries";
-import DateFormat from "../date-format";
+import DateFormat from "~/components/date-format";
+import { useSearch } from "~/hooks/useSearch";
+import SearchSuggestions from "~/components/search-suggestions";
 
 interface SearchBoxProps {
   label: string;
+  data: Record<string, any>[];
+  itemFieldFilterName: string;
+  itemFieldId: string;
+  itemFieldHost: string;
+  itemFieldName: string;
 }
 
 export function SearchBox(props: SearchBoxProps) {
-  const { label } = props;
+  const {
+    label,
+    data,
+    itemFieldFilterName,
+    itemFieldId,
+    itemFieldHost,
+    itemFieldName,
+  } = props;
 
-  const { loading, data, error } = useQuery(freeCoursesQuery);
-
-  const [text, setText] = React.useState<string>("");
-
-  const [suggestions, setSuggestions] = React.useState<string[]>([]);
-
-  const onChangeHandler = (text: any) => {
-    let matches = [];
-
-    if (text.length > 0) {
-      matches = data.freeCourses.filter((course: any) => {
-        const regex = new RegExp(`${text}`, "gi");
-        return course.courseName.match(regex);
-      });
-    }
-
-    setSuggestions(matches);
-    setText(text);
-  };
-
-  const Suggestions = () => {
-    return (
-      <Box
-        maxH="lg"
-        overflow="hidden"
-        overflowY="auto"
-        css={{
-          "&::-webkit-scrollbar": {
-            width: "4px",
-          },
-          "&::-webkit-scrollbar-track": {
-            width: "6px",
-          },
-          "&::-webkit-scrollbar-thumb": {
-            background: "#A0AEC0",
-            borderRadius: "24px",
-          },
-        }}
-      >
-        {suggestions.map(
-          (suggestion: any) =>
-            suggestion.state === "publish" && (
-              <Link
-                key={suggestion.id}
-                href={`${
-                  suggestion.courseHost === "youtube"
-                    ? `https://www.youtube.com/watch?v=${suggestion.courseId}`
-                    : `https://www.twitch.tv/videos/${suggestion.courseId}`
-                }`}
-                px="3"
-                py={{ base: "2", sm: "3" }}
-                display="block"
-                _hover={{
-                  bg: "gray.100",
-                }}
-                _dark={{
-                  _hover: {
-                    bg: "gray.600",
-                  },
-                }}
-                isExternal
-              >
-                <Flex gap="4" alignItems="center">
-                  <>
-                    {suggestion.courseHost === "youtube" && (
-                      <BsYoutube color="#C53030" size={20} />
-                    )}
-                    {suggestion.courseHost === "twitch" && (
-                      <BsTwitch color="#8b43f7" size={20} />
-                    )}
-                  </>
-                  <Box>
-                    <Heading as="h2" mb="1" fontSize={{ base: "sm", sm: "md" }}>
-                      {suggestion.courseName}
-                    </Heading>
-                    <Text
-                      fontSize={{ base: "x-small", sm: "xs" }}
-                      fontWeight="semibold"
-                      textColor="gray.400"
-                    >
-                      {suggestion.tutorName} |{" "}
-                      <DateFormat videoDate={suggestion.yearOfPublication} />
-                    </Text>
-                  </Box>
-                </Flex>
-              </Link>
-            )
-        )}
-      </Box>
-    );
-  };
+  const { onChangeHandler, suggestions, setSuggestions, text } = useSearch(
+    data,
+    itemFieldFilterName
+  );
 
   return (
     <Box
@@ -163,7 +86,63 @@ export function SearchBox(props: SearchBoxProps) {
             onBlur={() => setTimeout(() => setSuggestions([]), 100)}
           />
         </InputGroup>
-        {suggestions && <Suggestions />}
+        {suggestions && (
+          <SearchSuggestions>
+            {suggestions.map(
+              (suggestion: any) =>
+                suggestion.state === "publish" && (
+                  <Link
+                    key={suggestion.id}
+                    href={`${
+                      suggestion[itemFieldHost] === "youtube"
+                        ? `https://www.youtube.com/watch?v=${suggestion[itemFieldId]}`
+                        : `https://www.twitch.tv/videos/${suggestion[itemFieldId]}`
+                    }`}
+                    px="3"
+                    py={{ base: "2", sm: "3" }}
+                    display="block"
+                    _hover={{
+                      bg: "gray.100",
+                    }}
+                    _dark={{
+                      _hover: {
+                        bg: "gray.600",
+                      },
+                    }}
+                    isExternal
+                  >
+                    <Flex gap="4" alignItems="center">
+                      {suggestion[itemFieldHost] === "youtube" && (
+                        <BsYoutube color="#C53030" size={20} />
+                      )}
+                      {suggestion[itemFieldHost] === "twitch" && (
+                        <BsTwitch color="#8b43f7" size={20} />
+                      )}
+                      <Box>
+                        <Heading
+                          as="h2"
+                          mb="1"
+                          fontSize={{ base: "sm", sm: "md" }}
+                        >
+                          {suggestion[itemFieldName]}
+                        </Heading>
+                        <Text
+                          fontSize={{ base: "x-small", sm: "xs" }}
+                          fontWeight="semibold"
+                          textColor="gray.400"
+                        >
+                          {suggestion.tutorName} |{" "}
+                          <DateFormat
+                            videoDate={suggestion.dateOfPublication}
+                          />
+                        </Text>
+                      </Box>
+                    </Flex>
+                  </Link>
+                )
+            )}
+          </SearchSuggestions>
+        )}
       </Box>
     </Box>
   );
