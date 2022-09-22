@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 
-export default function SearchSuggestions(children: any) {
+export default function SearchSuggestions(props: any) {
   return (
     <Box
       maxH="lg"
@@ -18,7 +18,7 @@ export default function SearchSuggestions(children: any) {
           borderRadius: "24px",
         },
       }}
-      {...children}
+      {...props}
     />
   );
 }

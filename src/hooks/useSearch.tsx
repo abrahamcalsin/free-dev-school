@@ -1,12 +1,12 @@
 import * as React from "react";
 
-export function useSearch(data?: any, itemField?: any) {
+export function useSearch(data: Record<string, any>[], itemField: string) {
   const [text, setText] = React.useState<string>("");
 
   const [suggestions, setSuggestions] = React.useState<string[]>([]);
 
   const onChangeHandler = (text: string) => {
-    let matches = [];
+    let matches: any[] = [];
 
     if (text.length > 0) {
       matches = data

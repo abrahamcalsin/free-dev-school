@@ -17,7 +17,7 @@ import SearchSuggestions from "~/components/search-suggestions";
 
 interface SearchBoxProps {
   label: string;
-  data: any;
+  data: Record<string, any>[];
   itemFieldFilterName: string;
   itemFieldId: string;
   itemFieldHost: string;
