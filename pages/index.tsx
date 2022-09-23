@@ -49,9 +49,9 @@ const Home: NextPage = () => {
       <Box textAlign="center" maxW="full" w="4xl" mx="auto">
         <Heading
           as="h1"
+          fontSize={{ base: "2xl", sm: "4xl" }}
           mb={{ base: "3", sm: "4" }}
           fontWeight="extrabold"
-          fontSize={{ base: "2xl", sm: "4xl" }}
           lineHeight={{ base: "auto", sm: "xl" }}
         >
           Descubre los mejores{" "}
