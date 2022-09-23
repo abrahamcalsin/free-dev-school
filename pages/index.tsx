@@ -17,6 +17,7 @@ import { MainLayout } from "~/layouts";
 import { VideoCard } from "~/components/video-card";
 import { freeCoursesQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
+import Meta from "~/components/meta";
 
 const Home: NextPage = () => {
   const { loading, data, error } = useQuery(freeCoursesQuery);
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
 
   return (
     <MainLayout>
+      <Meta />
       <Box textAlign="center" maxW="full" w="4xl" mx="auto">
         <Heading
           as="h1"

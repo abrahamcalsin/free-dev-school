@@ -16,6 +16,7 @@ import { VideoCard } from "~/components/video-card";
 import { freeTutorialsQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
 import { SearchBox } from "~/components/search-box";
+import Meta from "~/components/meta";
 
 const FreeTutorials = () => {
   const { loading, data, error } = useQuery(freeTutorialsQuery);
@@ -45,6 +46,7 @@ const FreeTutorials = () => {
 
   return (
     <MainLayout>
+      <Meta title="Tutoriales gratis" />
       <Box
         textAlign="center"
         maxW="full"
