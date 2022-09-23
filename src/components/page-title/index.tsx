@@ -1,11 +1,11 @@
 import { Heading, Text } from "@chakra-ui/react";
 
-export interface TitleSectionProps {
+export interface PageTitleProps {
   title?: string;
   spanText?: string;
 }
 
-export function TitleSection(props: TitleSectionProps) {
+export function PageTitle(props: PageTitleProps) {
   const { title, spanText } = props;
 
   return (

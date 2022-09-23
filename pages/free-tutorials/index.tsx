@@ -17,7 +17,7 @@ import { freeTutorialsQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
 import { SearchBox } from "~/components/search-box";
 import Meta from "~/components/meta";
-import { TitleSection } from "~/components/page-title";
+import { PageTitle } from "~/components/page-title";
 
 const FreeTutorials = () => {
   const { loading, data, error } = useQuery(freeTutorialsQuery);
@@ -55,7 +55,7 @@ const FreeTutorials = () => {
         mx="auto"
         mb={{ base: "9", sm: "16" }}
       >
-        <TitleSection
+        <PageTitle
           title="Tutoriales de programación gratuitos"
           spanText={`${publicVideos.length}`}
         />

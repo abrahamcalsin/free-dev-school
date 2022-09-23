@@ -17,7 +17,7 @@ import { VideoCard } from "~/components/video-card";
 import { freeCoursesQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
 import Meta from "~/components/meta";
-import { TitleSection } from "~/components/page-title";
+import { PageTitle } from "~/components/page-title";
 
 const FreeCourses = () => {
   const { loading, data, error } = useQuery(freeCoursesQuery);
@@ -51,7 +51,7 @@ const FreeCourses = () => {
     <MainLayout>
       <Meta title="Cursos gratis" />
       <Box textAlign="center" maxW="full" w="3xl" mx="auto">
-        <TitleSection
+        <PageTitle
           title="Cursos de programación gratuitos"
           spanText={`${publicVideos.length}`}
         />
