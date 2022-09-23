@@ -1,3 +1,3 @@
-# Free Dev School
+![Free Dev School][https://bit.ly/3SnelFm]
 
-Este sitio web te permite buscar y elegir los mejores cursos gratuitos que te gusten, además de encontrar una gran cantidad de tutoriales de programación.
+This website allows you to search and choose the best free courses that you like, as well as find a large number of programming tutorials.
