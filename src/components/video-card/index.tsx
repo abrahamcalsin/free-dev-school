@@ -1,7 +1,7 @@
 import * as React from "react";
-
-import { Box, GridItem, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { BsImageAlt, BsTwitch, BsYoutube } from "react-icons/bs";
+import { Box, GridItem, Heading, Image, Link, Text } from "@chakra-ui/react";
+
 import DateFormat from "~/components/date-format";
 
 interface VideoCardProps {

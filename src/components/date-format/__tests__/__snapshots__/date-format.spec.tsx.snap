@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateFormat shows the formatted date in english 1`] = `
+<body>
+  <div>
+    <span
+      class="chakra-text css-0"
+    >
+      September 25, 2022
+    </span>
+  </div>
+</body>
+`;
+
+exports[`DateFormat shows the formatted date in spanish 1`] = `
+<body>
+  <div>
+    <span
+      class="chakra-text css-0"
+    >
+      septiembre 24, 2022
+    </span>
+  </div>
+</body>
+`;

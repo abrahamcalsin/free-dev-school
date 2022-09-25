@@ -1,3 +1,3 @@
 export const dateFormat = {
-  video: "MMMM D, YYYY",
+  USA: "MMMM D, YYYY",
 };
