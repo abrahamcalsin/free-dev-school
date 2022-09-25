@@ -1,5 +1,4 @@
-import type { GetServerSidePropsResult, NextPage } from "next";
-import RouterLink from "next/link";
+import { useQuery } from "@apollo/client";
 import {
   Alert,
   AlertIcon,
@@ -11,13 +10,15 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import { useQuery } from "@apollo/client";
 import cloneDeep from "lodash.clonedeep";
-import { MainLayout } from "~/layouts";
+import type { GetServerSidePropsResult, NextPage } from "next";
+import RouterLink from "next/link";
+
+import Meta from "~/components/meta";
 import { VideoCard } from "~/components/video-card";
 import { freeCoursesQuery } from "~/gql/queries";
+import { MainLayout } from "~/layouts";
 import { createApolloClient } from "~/lib/apollo-client";
-import Meta from "~/components/meta";
 
 const Home: NextPage = () => {
   const { loading, data, error } = useQuery(freeCoursesQuery);

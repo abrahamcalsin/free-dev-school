@@ -1,7 +1,7 @@
 import * as React from "react";
+import { Box, Link } from "@chakra-ui/react";
 import RouterLink from "next/link";
 
-import { Box, Link } from "@chakra-ui/react";
 import { DarkThemeButton } from "~/components/dark-theme-button";
 import { LogoFreeDevSchool } from "~/svg/logo-free-dev-school";
 

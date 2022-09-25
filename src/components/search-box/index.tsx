@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element, react/no-children-prop */
-import { HiSearch } from "react-icons/hi";
 import { BsTwitch, BsYoutube } from "react-icons/bs";
+import { HiSearch } from "react-icons/hi";
 import {
   Box,
   Flex,
@@ -11,9 +11,10 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import DateFormat from "~/components/date-format";
-import { useSearch } from "~/hooks/useSearch";
+
+import { DateFormat } from "~/components/date-format";
 import SearchSuggestions from "~/components/search-suggestions";
+import { useSearch } from "~/hooks/useSearch";
 
 interface SearchBoxProps {
   label: string;
@@ -132,9 +133,7 @@ export function SearchBox(props: SearchBoxProps) {
                           textColor="gray.400"
                         >
                           {suggestion.tutorName} |{" "}
-                          <DateFormat
-                            videoDate={suggestion.dateOfPublication}
-                          />
+                          <DateFormat date={suggestion.dateOfPublication} />
                         </Text>
                       </Box>
                     </Flex>

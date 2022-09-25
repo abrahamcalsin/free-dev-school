@@ -1,8 +1,8 @@
 import * as React from "react";
-
 import { Box, Container } from "@chakra-ui/react";
-import { NavbarMobile } from "./components/navbar-mobile";
+
 import { NavbarDesktop } from "./components/navbar-desktop";
+import { NavbarMobile } from "./components/navbar-mobile";
 
 export function Navbar() {
   return (

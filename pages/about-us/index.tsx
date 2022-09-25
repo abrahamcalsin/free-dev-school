@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
+
 import { MainLayout } from "~/layouts";
 
 const AvourUs = () => {
