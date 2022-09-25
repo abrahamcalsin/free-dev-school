@@ -1,11 +1,13 @@
-import "../styles/globals.css";
 import * as React from "react";
-import type { AppProps } from "next/app";
 import { ApolloProvider } from "@apollo/client";
 import { ChakraProvider } from "@chakra-ui/react";
-import { mainTheme } from "~/themes/main";
+import type { AppProps } from "next/app";
+
 import { Navbar } from "~/components/navbar";
 import { createApolloClient } from "~/lib/apollo-client";
+import { mainTheme } from "~/themes/main";
+
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const apolloClient = React.useMemo(() => {

@@ -2,7 +2,7 @@ import * as React from "react";
 import { BsImageAlt, BsTwitch, BsYoutube } from "react-icons/bs";
 import { Box, GridItem, Heading, Image, Link, Text } from "@chakra-ui/react";
 
-import DateFormat from "~/components/date-format";
+import { DateFormat } from "~/components/date-format";
 
 interface VideoCardProps {
   channelName?: string;
@@ -131,7 +131,7 @@ export function VideoCard(props: VideoCardProps) {
               {videoName}
             </Heading>
           </Link>
-          {dateOfPublication && <DateFormat videoDate={dateOfPublication} />}
+          {dateOfPublication && <DateFormat date={dateOfPublication} />}
         </Box>
       </Box>
     </GridItem>

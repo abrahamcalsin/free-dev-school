@@ -1,11 +1,10 @@
 import * as React from "react";
-import RouterLink from "next/link";
-
-import { Box, Link, Text } from "@chakra-ui/react";
-import { DarkThemeButton } from "~/components/dark-theme-button";
 import { FaShapes } from "react-icons/fa";
 import { MdVideoLibrary } from "react-icons/md";
+import { Box, Link, Text } from "@chakra-ui/react";
+import RouterLink from "next/link";
 
+import { DarkThemeButton } from "~/components/dark-theme-button";
 import { LogoFreeDevSchool } from "~/svg/logo-free-dev-school";
 
 const NavTop = () => {

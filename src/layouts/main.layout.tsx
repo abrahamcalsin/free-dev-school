@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Container } from "@chakra-ui/react";
+
 import { Footer } from "~/components/footer";
 import BackgroundLines from "~/svg/background-lines";
 

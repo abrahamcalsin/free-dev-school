@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --ignore-path .gitignore",
     "test:unit:watch": "jest --watch --watchAll=true --colors",
     "test:unit:ci": "jest --ci --coverage"
   },

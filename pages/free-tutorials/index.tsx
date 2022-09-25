@@ -1,4 +1,4 @@
-import { GetServerSidePropsResult } from "next";
+import { useQuery } from "@apollo/client";
 import {
   Alert,
   AlertIcon,
@@ -9,15 +9,16 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import { useQuery } from "@apollo/client";
 import cloneDeep from "lodash.clonedeep";
-import { MainLayout } from "~/layouts";
-import { VideoCard } from "~/components/video-card";
-import { freeTutorialsQuery } from "~/gql/queries";
-import { createApolloClient } from "~/lib/apollo-client";
-import { SearchBox } from "~/components/search-box";
+import { GetServerSidePropsResult } from "next";
+
 import Meta from "~/components/meta";
 import { PageTitle } from "~/components/page-title";
+import { SearchBox } from "~/components/search-box";
+import { VideoCard } from "~/components/video-card";
+import { freeTutorialsQuery } from "~/gql/queries";
+import { MainLayout } from "~/layouts";
+import { createApolloClient } from "~/lib/apollo-client";
 
 const FreeTutorials = () => {
   const { loading, data, error } = useQuery(freeTutorialsQuery);
