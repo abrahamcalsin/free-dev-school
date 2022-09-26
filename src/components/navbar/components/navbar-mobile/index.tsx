@@ -1,4 +1,5 @@
 import * as React from "react";
+import { BsFillGrid1X2Fill } from "react-icons/bs";
 import { FaShapes } from "react-icons/fa";
 import { MdVideoLibrary } from "react-icons/md";
 import { Box, Link, Text } from "@chakra-ui/react";
@@ -86,6 +87,11 @@ const NavBottom = () => {
         href="/free-tutorials"
         labelLink="Tutoriales gratis"
         svgIcon={<MdVideoLibrary size={20} />}
+      />
+      <NavigationMobLink
+        href="/more-free-resources"
+        labelLink="Más recursos"
+        svgIcon={<BsFillGrid1X2Fill size={20} />}
       />
     </Box>
   );
