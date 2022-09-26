@@ -38,6 +38,10 @@ export function NavbarDesktop() {
           href="/free-tutorials"
           labelLink="Tutoriales gratis"
         />
+        <NavigationDeskLink
+          href="/more-free-resources"
+          labelLink="Mas recursos"
+        />
         <DarkThemeButton />
       </Box>
     </Box>
