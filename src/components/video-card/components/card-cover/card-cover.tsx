@@ -8,6 +8,7 @@ interface CardCoverProps {
 
 export function CardCover(props: CardCoverProps) {
   const { videoName, src } = props;
+
   return (
     <Box>
       {src ? (

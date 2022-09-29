@@ -24,15 +24,23 @@ export function Content(props: ContentProps) {
     icon,
   } = props;
 
+  const hrefToChannel = `${
+    videoHost === "twitch"
+      ? `https://www.twitch.tv/${channelId}`
+      : `https://www.youtube.com/channel/${channelId}`
+  }`;
+
+  const hrefToVideo = `${
+    videoHost === "youtube"
+      ? `https://www.youtube.com/watch?v=${videoId}`
+      : `https://www.twitch.tv/videos/${videoId}`
+  }`;
+
   return (
     <Box p="3">
       <Box>
         <Link
-          href={`${
-            videoHost === "twitch"
-              ? `https://www.twitch.tv/${channelId}`
-              : `https://www.youtube.com/channel/${channelId}`
-          }`}
+          href={hrefToChannel}
           display="flex"
           alignItems="center"
           gap="1.5"
@@ -49,16 +57,7 @@ export function Content(props: ContentProps) {
         </Link>
       </Box>
       <Box mt="2">
-        <Link
-          href={`${
-            videoHost === "youtube"
-              ? `https://www.youtube.com/watch?v=${videoId}`
-              : `https://www.twitch.tv/videos/${videoId}`
-          }`}
-          isExternal
-          display="block"
-          mb="2"
-        >
+        <Link href={hrefToVideo} isExternal display="block" mb="2">
           <Heading
             as="h3"
             fontSize={{ base: "xs", sm: "md" }}

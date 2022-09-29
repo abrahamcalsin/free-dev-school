@@ -28,4 +28,5 @@ export async function getServerSideProps(): Promise<
     },
   };
 }
+
 export default MoreFreeResourcesPage;
