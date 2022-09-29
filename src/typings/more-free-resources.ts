@@ -9,6 +9,6 @@ export interface MoreFreeResourceResponsePayload {
   state: string;
 }
 
-export interface MoreFreeResourceQueryResponsePayload {
+export interface MoreFreeResourcesQueryResponsePayload {
   moreFreeResources: MoreFreeResourceResponsePayload[];
 }

@@ -37,14 +37,14 @@ export function SearchBoxResults<T extends Record<string, any>>(
       position="absolute"
       left="0"
       top="100%"
-      backgroundColor="gray.700"
+      bgColor="white"
       // ---
       border="2px"
       borderTop="0"
       borderColor="gray.200"
-      _dark={{ borderColor: "gray.600", bgColor: "gray.700" }}
       rounded="lg"
       borderTopRadius="0"
+      _dark={{ borderColor: "gray.600", bgColor: "gray.700" }}
     >
       {data.map((item, index) => renderResultItem(item, index))}
     </Box>

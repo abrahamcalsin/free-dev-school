@@ -2,7 +2,10 @@ import { gql } from "@apollo/client";
 
 const freeCoursesQuery = gql`
   query FreeCourses {
-    freeCourses {
+    freeCourses(
+      _order_by: { dateOfPublication: "desc" }
+      _filter: { _and: [{ state: { _eq: "publish" } }] }
+    ) {
       id
       tutorName
       courseName

@@ -1,7 +1,6 @@
-import { NormalizedCacheObject } from "@apollo/client";
+import type { NormalizedCacheObject } from "@apollo/client";
 import { GetServerSidePropsResult } from "next";
 
-import Meta from "~/components/meta";
 import { freeCoursesQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
 import { FreeCoursesScreen } from "~/screens/free-courses";
@@ -11,12 +10,7 @@ interface FreeCoursesPageProps {
 }
 
 function FreeCoursesPage() {
-  return (
-    <>
-      <Meta title="Cursos gratis" />
-      <FreeCoursesScreen />
-    </>
-  );
+  return <FreeCoursesScreen />;
 }
 
 export async function getServerSideProps(): Promise<

@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Grid } from "@chakra-ui/react";
 
+import { SocialMediaIcon } from "~/components/social-media-icon";
 import { VideoCard } from "~/components/video-card";
 import { freeTutorialsQuery } from "~/gql/queries";
 import { FreeTutorialsQueryResponsePayload } from "~/typings/free-tutorials";
@@ -21,18 +22,17 @@ export function Content() {
     >
       {freeTutorials.map((freeTutorial) => {
         return (
-          freeTutorial.state === "publish" && (
-            <VideoCard
-              key={freeTutorial.id}
-              channelName={freeTutorial.tutorName}
-              videoName={freeTutorial.videoName}
-              videoId={freeTutorial.videoId}
-              src={freeTutorial.linkVideoThumbnail}
-              videoHost={freeTutorial.videoHost}
-              channelId={freeTutorial.tutorChannelId}
-              dateOfPublication={freeTutorial.dateOfPublication}
-            />
-          )
+          <VideoCard
+            key={freeTutorial.id}
+            channelName={freeTutorial.tutorName}
+            videoName={freeTutorial.videoName}
+            videoId={freeTutorial.videoId}
+            src={freeTutorial.linkVideoThumbnail}
+            videoHost={freeTutorial.videoHost}
+            channelId={freeTutorial.tutorChannelId}
+            dateOfPublication={freeTutorial.dateOfPublication}
+            icon={<SocialMediaIcon type={freeTutorial.videoHost} />}
+          />
         );
       })}
     </Grid>
