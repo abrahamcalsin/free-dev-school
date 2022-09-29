@@ -2,11 +2,10 @@ import { useQuery } from "@apollo/client";
 import { Box } from "@chakra-ui/react";
 
 import { DateFormat } from "~/components/date-format";
-import { SearchBox } from "~/components/search-box";
-import { SearchBoxResultItem } from "~/components/search-box/search-box-result-item";
+import { SearchBox, SearchBoxResultItem } from "~/components/search-box";
 import { SocialMediaIcon } from "~/components/social-media-icon";
 import { freeTutorialsQuery } from "~/gql/queries";
-import { FreeTutorialsQueryResponsePayload } from "~/typings/free-tutorials";
+import { FreeTutorialsQueryResponsePayload } from "~/typings";
 
 export function FreeTutorialsSearchBox() {
   const { data } = useQuery<FreeTutorialsQueryResponsePayload>(
@@ -25,8 +24,8 @@ export function FreeTutorialsSearchBox() {
         renderResultItem={(freeTutorial) => {
           const href =
             freeTutorial.videoHost === "youtube"
-              ? `https://www.youtube.com/watch?v=${freeTutorial.id}`
-              : `https://www.twitch.tv/videos/${freeTutorial.id}`;
+              ? `https://www.youtube.com/watch?v=${freeTutorial.videoId}`
+              : `https://www.twitch.tv/videos/${freeTutorial.videoId}`;
 
           const description = (
             <>

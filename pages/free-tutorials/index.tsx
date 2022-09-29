@@ -5,16 +5,16 @@ import { freeTutorialsQuery } from "~/gql/queries";
 import { createApolloClient } from "~/lib/apollo-client";
 import { FreeTutorialsScreen } from "~/screens/free-tutorials";
 
-interface FreeTutorialsProps {
+interface FreeTutorialsPageProps {
   apolloClientState: NormalizedCacheObject;
 }
 
-const FreeTutorialsPage = () => {
+function FreeTutorialsPage() {
   return <FreeTutorialsScreen />;
-};
+}
 
 export async function getServerSideProps(): Promise<
-  GetServerSidePropsResult<FreeTutorialsProps>
+  GetServerSidePropsResult<FreeTutorialsPageProps>
 > {
   const client = createApolloClient();
 

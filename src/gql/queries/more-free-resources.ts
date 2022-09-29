@@ -2,12 +2,15 @@ import { gql } from "@apollo/client";
 
 const moreFreeResourcesQuery = gql`
   query MoreFreeResources {
-    moreFreeResources {
+    moreFreeResources(
+      _order_by: { resourceType: "asc" }
+      _filter: { _and: [{ state: { _eq: "publish" } }] }
+    ) {
       id
       websiteName
       description
       technologies
-      # language
+      language
       websiteUrl
       resourceType
       state

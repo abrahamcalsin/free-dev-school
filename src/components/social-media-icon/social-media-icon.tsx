@@ -9,11 +9,11 @@ export function SocialMediaIcon(props: SocialMediaIconProps) {
 
   switch (type) {
     case "youtube": {
-      return <BsYoutube color="#C53030" size={20} />;
+      return <BsYoutube color="#C53030" size={18} />;
     }
 
     case "twitch": {
-      return <BsTwitch color="#8b43f7" size={20} />;
+      return <BsTwitch color="#8b43f7" size={18} />;
     }
 
     default: {

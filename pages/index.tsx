@@ -15,6 +15,7 @@ import type { GetServerSidePropsResult, NextPage } from "next";
 import RouterLink from "next/link";
 
 import Meta from "~/components/meta";
+import { SocialMediaIcon } from "~/components/social-media-icon";
 import { VideoCard } from "~/components/video-card";
 import { freeCoursesQuery } from "~/gql/queries";
 import { MainLayout } from "~/layouts";
@@ -143,7 +144,6 @@ const Home: NextPage = () => {
               )
               .map((course: any) => {
                 return (
-                  course.state === "publish" &&
                   course.publicationStatus === "recent" && (
                     <VideoCard
                       key={course.id}
@@ -155,6 +155,7 @@ const Home: NextPage = () => {
                       channelId={course.tutorChannelId}
                       dateOfPublication={course.dateOfPublication}
                       publicationStatus={course.publicationStatus}
+                      icon={<SocialMediaIcon type={course.courseHost} />}
                     />
                   )
                 );

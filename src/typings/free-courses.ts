@@ -11,6 +11,6 @@ export interface FreeCourseResponsePayload {
   state: string;
 }
 
-export interface FreeCourseQueryResponsePayload {
+export interface FreeCoursesQueryResponsePayload {
   freeCourses: FreeCourseResponsePayload[];
 }
