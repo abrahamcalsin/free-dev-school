@@ -1,4 +1,4 @@
-import { Badge, GridItem } from "@chakra-ui/react";
+import { Badge, Box } from "@chakra-ui/react";
 
 import { CardCover } from "./components/card-cover";
 import { Content, ContentProps } from "./components/content";
@@ -22,7 +22,7 @@ export function VideoCard(props: VideoCardProps) {
   } = props;
 
   return (
-    <GridItem
+    <Box
       bg="white"
       position="relative"
       overflow="hidden"
@@ -65,6 +65,6 @@ export function VideoCard(props: VideoCardProps) {
         dateOfPublication={dateOfPublication}
         icon={icon}
       />
-    </GridItem>
+    </Box>
   );
 }
