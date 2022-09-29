@@ -76,7 +76,7 @@ export function MoreFreeResourcesSearchBox() {
                       {freeResource.resourceType}
                     </Text>
                     {(freeResource.language as unknown as any[]).map(
-                      (language: string, index: any) =>
+                      (language: string, index: number) =>
                         language === "en" ? (
                           <Text
                             key={index}

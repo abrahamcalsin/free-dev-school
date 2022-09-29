@@ -58,7 +58,7 @@ export function InfoCard(props: InfoCardProps) {
           </Text>
           <>
             {(language as unknown as any[]).map(
-              (language: string, index: any) =>
+              (language: string, index: number) =>
                 language === "en" ? (
                   <Text
                     key={index}
