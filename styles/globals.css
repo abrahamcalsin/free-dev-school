@@ -7,3 +7,16 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.card-grid {
+  display: flex;
+  width: auto;
+  gap: 12px;
+}
+.card-grid_column {
+  background-clip: padding-box;
+}
+
+.card-grid_column > div {
+  margin-bottom: 12px;
+}

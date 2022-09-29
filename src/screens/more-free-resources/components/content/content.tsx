@@ -1,5 +1,6 @@
+import Masonry from "react-masonry-css";
 import { useQuery } from "@apollo/client";
-import { Box, Grid, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 import { moreFreeResourcesQuery } from "~/gql/queries";
 import { MoreFreeResourcesQueryResponsePayload } from "~/typings";
@@ -14,6 +15,13 @@ export function Content() {
 
   const moreFreeResources = data?.moreFreeResources ?? [];
 
+  const breakpointColumns = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 2,
+  };
+
   return (
     <>
       <Box>
@@ -25,10 +33,10 @@ export function Content() {
         >
           Documentaciónes:
         </Heading>
-        <Grid
-          templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
-          alignItems="start"
-          gap={{ base: "3", sm: "4" }}
+        <Masonry
+          breakpointCols={breakpointColumns}
+          className="card-grid"
+          columnClassName="card-grid_column"
         >
           {moreFreeResources.map((freeResource) => {
             return (
@@ -44,7 +52,7 @@ export function Content() {
               )
             );
           })}
-        </Grid>
+        </Masonry>
       </Box>
       <Box mt="10">
         <Heading
@@ -55,10 +63,10 @@ export function Content() {
         >
           Herramientas:
         </Heading>
-        <Grid
-          templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
-          alignItems="start"
-          gap={{ base: "3", sm: "4" }}
+        <Masonry
+          breakpointCols={breakpointColumns}
+          className="card-grid"
+          columnClassName="card-grid_column"
         >
           {moreFreeResources.map((freeResource) => {
             return (
@@ -74,7 +82,7 @@ export function Content() {
               )
             );
           })}
-        </Grid>
+        </Masonry>
       </Box>
       <Box mt="10">
         <Heading
@@ -85,10 +93,10 @@ export function Content() {
         >
           Blogs:
         </Heading>
-        <Grid
-          templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
-          alignItems="start"
-          gap={{ base: "3", sm: "4" }}
+        <Masonry
+          breakpointCols={breakpointColumns}
+          className="card-grid"
+          columnClassName="card-grid_column"
         >
           {moreFreeResources.map((freeResource) => {
             return (
@@ -104,7 +112,7 @@ export function Content() {
               )
             );
           })}
-        </Grid>
+        </Masonry>
       </Box>
       <Box mt="10">
         <Heading
@@ -115,10 +123,10 @@ export function Content() {
         >
           Juegos para aprender a programar:
         </Heading>
-        <Grid
-          templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
-          alignItems="start"
-          gap={{ base: "3", sm: "4" }}
+        <Masonry
+          breakpointCols={breakpointColumns}
+          className="card-grid"
+          columnClassName="card-grid_column"
         >
           {moreFreeResources.map((freeResource) => {
             return (
@@ -134,7 +142,7 @@ export function Content() {
               )
             );
           })}
-        </Grid>
+        </Masonry>
       </Box>
     </>
   );

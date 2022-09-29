@@ -1,5 +1,5 @@
+import Masonry from "react-masonry-css";
 import { useQuery } from "@apollo/client";
-import { Grid } from "@chakra-ui/react";
 
 import { SocialMediaIcon } from "~/components/social-media-icon";
 import { VideoCard } from "~/components/video-card";
@@ -14,11 +14,18 @@ export function Content() {
 
   const freeTutorials = data?.freeTutorials ?? [];
 
+  const breakpointColumns = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 2,
+  };
+
   return (
-    <Grid
-      templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }}
-      alignItems="start"
-      gap={{ base: "3", sm: "4" }}
+    <Masonry
+      breakpointCols={breakpointColumns}
+      className="card-grid"
+      columnClassName="card-grid_column"
     >
       {freeTutorials.map((freeTutorial) => {
         return (
@@ -35,6 +42,6 @@ export function Content() {
           />
         );
       })}
-    </Grid>
+    </Masonry>
   );
 }
