@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Link, Text } from "@chakra-ui/react";
 
 import { PageTitle } from "~/components/page-title";
 
@@ -6,10 +6,12 @@ export interface IntroductionProps {
   title: string;
   titleCount: number;
   description: string;
+  formId?: string;
+  formLabel?: string;
 }
 
 export function Introduction(props: IntroductionProps) {
-  const { title, description, titleCount } = props;
+  const { title, description, titleCount, formId, formLabel } = props;
 
   return (
     <Box
@@ -36,6 +38,19 @@ export function Introduction(props: IntroductionProps) {
         }}
       >
         {description}
+        {formId && (
+          <Link
+            href={`https://tally.so/r/${formId}`}
+            textColor="blue.400"
+            fontStyle="italic"
+            textDecoration="underline"
+            fontWeight="bold"
+            ml="1.5"
+            isExternal={true}
+          >
+            {formLabel}
+          </Link>
+        )}
       </Text>
     </Box>
   );

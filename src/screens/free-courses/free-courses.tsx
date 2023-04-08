@@ -43,6 +43,8 @@ export function FreeCoursesScreen() {
         description="En esta sección encontrarás una selección de un gran número de los
       mejores cursos de programación gratuitos."
         titleCount={freeCourses.length}
+        formId="mJqxB4"
+        formText="Envía tu sugerencia de un curso aquí."
       />
       <FreeCoursesSearchBox />
       <Content />
