@@ -44,7 +44,7 @@ export function FreeCoursesScreen() {
       mejores cursos de programación gratuitos."
         titleCount={freeCourses.length}
         formId="mJqxB4"
-        formText="Envía tu sugerencia de un curso aquí."
+        formLabel="Envía tu sugerencia de un curso aquí."
       />
       <FreeCoursesSearchBox />
       <Content />
