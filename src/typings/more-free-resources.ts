@@ -1,12 +1,13 @@
 export interface MoreFreeResourceResponsePayload {
-  id: string;
-  websiteName: string;
+  id: number;
+  website_name: string;
   description: string;
+  website_url: string;
   technologies: string[];
+  resource_type: string;
   language: string;
-  websiteUrl: string;
-  resourceType: string;
   state: string;
+  stacks: string[];
 }
 
 export interface MoreFreeResourcesQueryResponsePayload {

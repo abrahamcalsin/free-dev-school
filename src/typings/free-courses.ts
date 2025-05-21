@@ -1,13 +1,15 @@
 export interface FreeCourseResponsePayload {
-  id: string;
-  tutorName: string;
-  courseName: string;
-  courseId: string;
-  linkCourseThumbnail: string;
-  courseHost: string;
-  tutorChannelId: string;
-  dateOfPublication: string;
-  publicationStatus: string;
+  id: string | number;
+  tutor_name: string;
+  course_name: string;
+  description: string;
+  course_id: string;
+  link_course_thumbnail: string;
+  course_host: string;
+  tutor_channel_id: string;
+  stacks: string[];
+  date_of_publication: string;
+  publication_status: string;
   state: string;
 }
 

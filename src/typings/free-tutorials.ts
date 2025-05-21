@@ -1,14 +1,15 @@
 export interface FreeTutorialResponsePayload {
-  id: string;
-  tutorName: string;
-  tutorChannelId: string;
-  videoId: string;
-  videoName: string;
-  videoHost: string;
+  id: number;
+  tutor_name: string;
+  tutor_channel_id: string;
+  video_id: string;
+  video_name: string;
+  description: string;
+  date_of_publication: string;
+  link_video_thumbnail: string;
+  video_host: string;
   stacks: string[];
-  dateOfPublication: string;
   state: string;
-  linkVideoThumbnail: string;
 }
 
 export interface FreeTutorialsQueryResponsePayload {
