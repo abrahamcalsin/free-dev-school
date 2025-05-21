@@ -1,35 +1,35 @@
-import { useQuery } from "@apollo/client";
 import { Box } from "@chakra-ui/react";
 
 import { DateFormat } from "~/components/date-format";
 import { SearchBox, SearchBoxResultItem } from "~/components/search-box";
 import { SocialMediaIcon } from "~/components/social-media-icon";
-import { freeCoursesQuery } from "~/gql/queries";
-import { FreeCoursesQueryResponsePayload } from "~/typings";
+import { FreeCourseResponsePayload } from "~/typings";
 
-export function FreeCoursesSearchBox() {
-  const { data } = useQuery<FreeCoursesQueryResponsePayload>(freeCoursesQuery, {
-    fetchPolicy: "cache-only",
-  });
+interface FreeCoursesSearchBoxProps {
+  data: FreeCourseResponsePayload[];
+}
 
-  const freeCourses = data?.freeCourses ?? [];
+export function FreeCoursesSearchBox(props: FreeCoursesSearchBoxProps) {
+  const { data } = props;
+
+  const freeCourses = data ?? [];
 
   return (
     <Box my={{ base: "8", sm: "14" }}>
       <SearchBox
         data={freeCourses}
-        filter="courseName"
+        filter="course_name"
         placeholder="Buscar curso por tecnologia..."
         renderResultItem={(freeCourse) => {
           const href =
-            freeCourse.courseHost === "youtube"
-              ? `https://www.youtube.com/watch?v=${freeCourse.courseId}`
-              : `https://www.twitch.tv/videos/${freeCourse.courseId}`;
+            freeCourse.course_host === "youtube"
+              ? `https://www.youtube.com/watch?v=${freeCourse.course_id}`
+              : `https://www.twitch.tv/videos/${freeCourse.course_id}`;
 
           const description = (
             <>
-              {freeCourse.tutorName} |{" "}
-              <DateFormat date={freeCourse.dateOfPublication} />
+              {freeCourse.tutor_name} |{" "}
+              <DateFormat date={freeCourse.date_of_publication} />
             </>
           );
 
@@ -37,9 +37,9 @@ export function FreeCoursesSearchBox() {
             <SearchBoxResultItem
               key={freeCourse.id}
               href={href}
-              label={freeCourse.courseName}
+              label={freeCourse.course_name}
               description={description}
-              icon={<SocialMediaIcon type={freeCourse.courseHost} />}
+              icon={<SocialMediaIcon type={freeCourse.course_host} />}
             />
           );
         }}

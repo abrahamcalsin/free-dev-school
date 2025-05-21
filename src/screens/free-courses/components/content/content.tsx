@@ -1,17 +1,15 @@
 import Masonry from "react-masonry-css";
-import { useQuery } from "@apollo/client";
 
 import { SocialMediaIcon } from "~/components/social-media-icon";
 import { VideoCard } from "~/components/video-card";
-import { freeCoursesQuery } from "~/gql/queries";
-import { FreeCoursesQueryResponsePayload } from "~/typings";
+import { FreeCourseResponsePayload } from "~/typings";
 
-export function Content() {
-  const { data } = useQuery<FreeCoursesQueryResponsePayload>(freeCoursesQuery, {
-    fetchPolicy: "cache-only",
-  });
+interface ContentProps {
+  data: FreeCourseResponsePayload[];
+}
 
-  const freeCourses = data?.freeCourses ?? [];
+export function Content({ data }: ContentProps) {
+  const freeCourses = data ?? [];
 
   const breakpointColumns = {
     default: 4,
@@ -30,15 +28,15 @@ export function Content() {
         return (
           <VideoCard
             key={freeCourse.id}
-            channelName={freeCourse.tutorName}
-            videoName={freeCourse.courseName}
-            videoId={freeCourse.courseId}
-            src={freeCourse.linkCourseThumbnail}
-            videoHost={freeCourse.courseHost}
-            channelId={freeCourse.tutorChannelId}
-            dateOfPublication={freeCourse.dateOfPublication}
-            publicationStatus={freeCourse.publicationStatus}
-            icon={<SocialMediaIcon type={freeCourse.courseHost} />}
+            channelName={freeCourse.tutor_name}
+            videoName={freeCourse.course_name}
+            videoId={freeCourse.course_id}
+            src={freeCourse.link_course_thumbnail}
+            videoHost={freeCourse.course_host}
+            channelId={freeCourse.tutor_channel_id}
+            dateOfPublication={freeCourse.date_of_publication}
+            publicationStatus={freeCourse.publication_status}
+            icon={<SocialMediaIcon type={freeCourse.course_host} />}
           />
         );
       })}
