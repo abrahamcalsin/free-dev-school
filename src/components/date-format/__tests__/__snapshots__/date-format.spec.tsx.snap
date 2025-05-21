@@ -4,7 +4,7 @@ exports[`DateFormat shows the formatted date in english 1`] = `
 <body>
   <div>
     <span
-      class="chakra-text css-0"
+      class="chakra-text css-4uz4rj"
     >
       September 25, 2022
     </span>
@@ -16,7 +16,7 @@ exports[`DateFormat shows the formatted date in spanish 1`] = `
 <body>
   <div>
     <span
-      class="chakra-text css-0"
+      class="chakra-text css-4uz4rj"
     >
       septiembre 24, 2022
     </span>
