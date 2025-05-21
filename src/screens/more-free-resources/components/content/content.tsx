@@ -1,20 +1,15 @@
 import Masonry from "react-masonry-css";
-import { useQuery } from "@apollo/client";
 import { Box, Heading } from "@chakra-ui/react";
 
-import { moreFreeResourcesQuery } from "~/gql/queries";
-import { MoreFreeResourcesQueryResponsePayload } from "~/typings";
+import { MoreFreeResourceResponsePayload } from "~/typings";
 
 import { InfoCard } from "../info-card";
 
-export function Content() {
-  const { data } = useQuery<MoreFreeResourcesQueryResponsePayload>(
-    moreFreeResourcesQuery,
-    { fetchPolicy: "cache-only" }
-  );
+interface ContentProps {
+  data: MoreFreeResourceResponsePayload[];
+}
 
-  const moreFreeResources = data?.moreFreeResources ?? [];
-
+export function Content({ data }: ContentProps) {
   const breakpointColumns = {
     default: 4,
     1100: 3,
@@ -38,15 +33,15 @@ export function Content() {
           className="card-grid"
           columnClassName="card-grid_column"
         >
-          {moreFreeResources.map((freeResource) => {
+          {data?.map((freeResource) => {
             return (
-              freeResource.resourceType === "documentation" && (
+              freeResource.resource_type === "documentation" && (
                 <InfoCard
                   key={freeResource.id}
-                  href={freeResource.websiteUrl}
-                  title={freeResource.websiteName}
+                  href={freeResource.website_url}
+                  title={freeResource.website_name}
                   description={freeResource.description}
-                  type={freeResource.resourceType}
+                  type={freeResource.resource_type}
                   language={freeResource.language}
                 />
               )
@@ -68,15 +63,15 @@ export function Content() {
           className="card-grid"
           columnClassName="card-grid_column"
         >
-          {moreFreeResources.map((freeResource) => {
+          {data?.map((freeResource) => {
             return (
-              freeResource.resourceType === "tool" && (
+              freeResource.resource_type === "tool" && (
                 <InfoCard
                   key={freeResource.id}
-                  href={freeResource.websiteUrl}
-                  title={freeResource.websiteName}
+                  href={freeResource.website_url}
+                  title={freeResource.website_name}
                   description={freeResource.description}
-                  type={freeResource.resourceType}
+                  type={freeResource.resource_type}
                   language={freeResource.language}
                 />
               )
@@ -98,15 +93,15 @@ export function Content() {
           className="card-grid"
           columnClassName="card-grid_column"
         >
-          {moreFreeResources.map((freeResource) => {
+          {data?.map((freeResource) => {
             return (
-              freeResource.resourceType === "blog" && (
+              freeResource.resource_type === "blog" && (
                 <InfoCard
                   key={freeResource.id}
-                  href={freeResource.websiteUrl}
-                  title={freeResource.websiteName}
+                  href={freeResource.website_url}
+                  title={freeResource.website_name}
                   description={freeResource.description}
-                  type={freeResource.resourceType}
+                  type={freeResource.resource_type}
                   language={freeResource.language}
                 />
               )
@@ -128,15 +123,15 @@ export function Content() {
           className="card-grid"
           columnClassName="card-grid_column"
         >
-          {moreFreeResources.map((freeResource) => {
+          {data?.map((freeResource) => {
             return (
-              freeResource.resourceType === "game" && (
+              freeResource.resource_type === "game" && (
                 <InfoCard
                   key={freeResource.id}
-                  href={freeResource.websiteUrl}
-                  title={freeResource.websiteName}
+                  href={freeResource.website_url}
+                  title={freeResource.website_name}
                   description={freeResource.description}
-                  type={freeResource.resourceType}
+                  type={freeResource.resource_type}
                   language={freeResource.language}
                 />
               )

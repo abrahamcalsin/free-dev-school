@@ -1,17 +1,19 @@
 import { FiExternalLink } from "react-icons/fi";
-import { useQuery } from "@apollo/client";
 import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 
 import { SearchBox } from "~/components/search-box";
-import { moreFreeResourcesQuery } from "~/gql/queries";
-import { MoreFreeResourcesQueryResponsePayload } from "~/typings";
+import { MoreFreeResourceResponsePayload } from "~/typings";
 
-export function MoreFreeResourcesSearchBox() {
-  const { data } = useQuery<MoreFreeResourcesQueryResponsePayload>(
-    moreFreeResourcesQuery
-  );
+interface MoreFreeResourcesSearchBoxProps {
+  data: MoreFreeResourceResponsePayload[];
+}
 
-  const moreFreeResources = data?.moreFreeResources ?? [];
+export function MoreFreeResourcesSearchBox(
+  props: MoreFreeResourcesSearchBoxProps
+) {
+  const { data } = props;
+
+  const moreFreeResources = data ?? [];
 
   return (
     <Box my={{ base: "8", sm: "14" }}>
@@ -33,7 +35,7 @@ export function MoreFreeResourcesSearchBox() {
           return (
             <Link
               key={freeResource.id}
-              href={freeResource.websiteUrl}
+              href={freeResource.website_url}
               className="my-link"
               px="3"
               display="block"
@@ -51,7 +53,7 @@ export function MoreFreeResourcesSearchBox() {
               <Flex justifyContent="space-between" alignItems="center">
                 <Box>
                   <Heading as="h2" mb="1" fontSize={{ base: "sm", sm: "md" }}>
-                    {freeResource.websiteName}
+                    {freeResource.website_name}
                   </Heading>
                   <Box
                     display="inline-flex"
@@ -73,7 +75,7 @@ export function MoreFreeResourcesSearchBox() {
                         borderColor: "yellow.500",
                       }}
                     >
-                      {freeResource.resourceType}
+                      {freeResource.resource_type}
                     </Text>
                     {(freeResource.language as unknown as any[]).map(
                       (language: string, index: number) =>
@@ -97,6 +99,7 @@ export function MoreFreeResourcesSearchBox() {
                           </Text>
                         ) : (
                           <Text
+                            key={index}
                             as="span"
                             bg="blue.100"
                             textColor="blue.500"
