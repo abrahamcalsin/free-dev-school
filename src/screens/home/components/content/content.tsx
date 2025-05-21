@@ -1,18 +1,18 @@
 import * as React from "react";
-import { useQuery } from "@apollo/client";
 import { Box, Grid, Heading, Text } from "@chakra-ui/react";
+import { useQuery } from "@tanstack/react-query";
 
 import { SocialMediaIcon } from "~/components/social-media-icon";
 import { VideoCard } from "~/components/video-card";
-import { freeCoursesQuery } from "~/gql/queries";
-import { FreeCoursesQueryResponsePayload } from "~/typings";
+import { getFreeCourses } from "~/services/free-courses";
 
 export function Content() {
-  const { data } = useQuery<FreeCoursesQueryResponsePayload>(freeCoursesQuery, {
-    fetchPolicy: "cache-only",
+  const { data } = useQuery({
+    queryKey: ["freeCoursesPinned"],
+    queryFn: getFreeCourses,
   });
 
-  const freeCourses = data?.freeCourses ?? [];
+  const freeCourses = data ?? [];
 
   return (
     <>
@@ -62,18 +62,18 @@ export function Content() {
           >
             {freeCourses.map((course) => {
               return (
-                course.publicationStatus === "recent" && (
+                course.publication_status === "recent" && (
                   <VideoCard
                     key={course.id}
-                    channelName={course.tutorName}
-                    videoName={course.courseName}
-                    videoId={course.courseId}
-                    src={course.linkCourseThumbnail}
-                    videoHost={course.courseHost}
-                    channelId={course.tutorChannelId}
-                    dateOfPublication={course.dateOfPublication}
-                    publicationStatus={course.publicationStatus}
-                    icon={<SocialMediaIcon type={course.courseHost} />}
+                    channelName={course.tutor_name}
+                    videoName={course.course_name}
+                    videoId={course.course_id}
+                    src={course.link_course_thumbnail}
+                    videoHost={course.course_host}
+                    channelId={course.tutor_channel_id}
+                    dateOfPublication={course.date_of_publication}
+                    publicationStatus={course.publication_status}
+                    icon={<SocialMediaIcon type={course.course_host} />}
                   />
                 )
               );
