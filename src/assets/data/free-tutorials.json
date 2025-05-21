@@ -1,0 +1,1429 @@
+[
+  {
+    "id": 1,
+    "tutor_name": "midulive",
+    "video_name": "¡Usamos IA para desarrollar un proyecto con Node.js!",
+    "description": "Te enseño cómo puedes empezar a crear la API de Cohere para desarrollar tus productos que usen Inteligencia Artificial. Regístrate en Cohere: https://midu.link/ai Te explico todos los parámetros, qué puedes hacer y cómo puedes empezar. ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "video_id": "kNrCbOaRKSw",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/kNrCbOaRKSw/sddefault.jpg",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "date_of_publication": "2023-04-12T00:00:00.000Z",
+    "video_host": "",
+    "stacks": [],
+    "state": "draft"
+  },
+  {
+    "id": 2,
+    "tutor_name": "midulive",
+    "video_name": "¡Adiós useState! useSignal es el futuro de los Frameworks Web",
+    "description": "En este vídeo te explico qué es un signal y cómo se diferencia de useState() en React. Las ventajas que tiene, mejoras de rendimiento y por qué hay tanto hype a su alrededor. ▶ No te pierdas más directos en: https://www.twitch.tv/midudev Y es que, aunque ambas son formas de almacenar el estado de una aplicación, los signals tienen una ventaja clave: devuelven un getter y un setter en lugar de solo un valor y un setter como lo hace useState(). Esto permite que los signals sean reactivos y mantengan un seguimiento de quién está interesado en el estado, notificando a los suscriptores de los cambios de estado. En contraste, useState() en React solo devuelve el valor del estado, lo que significa que no sabe cómo se utiliza ese valor y debe volver a renderizar todo el árbol de componentes en respuesta a los cambios de estado. Además, el video también muestra ejemplos de cómo los signals simplifican el código y reducen la cantidad de trabajo que se necesita para actualizar la interfaz de usuario. El video también menciona algunos de los frameworks populares que usan signals, como Vue, Preact, Solid y Qwik, y cómo los signals han mejorado su experiencia de desarrollo en los últimos años.",
+    "video_id": "6CFml6tFltU",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/6CFml6tFltU/sddefault.jpg",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "date_of_publication": "2023-04-12T00:00:00.000Z",
+    "video_host": "",
+    "stacks": [],
+    "state": "draft"
+  },
+  {
+    "id": 3,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "🫣 3+1 Errores frecuentes al usar Hooks en React",
+    "description": "Ejemplos concretos de los fallos que solemos cometer a la hora de programar usando React Hooks. Por cada uno de estos 3 errores + el bonus  veremos el efecto que producen desde el punto de vista de usuarios finales, el motivo por el que se producen, y cómo solucionarlos 🤟 🌟 Curso completo de React desde 0 hasta deploy aplicando buenas prácticas: https://pro.codely.com/library/react-de-0-aplicando-buenas-practicas-192069/460310/about/?utm_source=youtube&utm_medium=social&utm_campaign=related-video&utm_content=errores-hooks ﹤🍍﹥ CodelyTV ├ 🎥 Suscríbete: https://youtube.com/c/CodelyTV?sub_confirmation=1 ├ 🐦 Twitter CodelyTV: https://twitter.com/CodelyTV ├ 🚀 Twitter Isma: https://twitter.com/ismanapa ├ 🫧 Twitter Javi: https://twitter.com/JavierCane ├ 📸 Instagram: https://instagram.com/CodelyTV ├ ℹ️ LinkedIn: https://linkedin.com/company/codelytv ├ 🟦 Facebook: https://facebook.com/CodelyTV └ 📕 Catálogo cursos: https://bit.ly/cursos-codely 0:00 Introducción a los 3 errores más comunes 0:26 1. BUCLE INFINITO en useEffect 2:43 2. Estado derivado sin useMemo 5:35 3. No desmontar eventListeners 8:02 BONUS: Modificar estado previo con useState sin usar función de update",
+    "video_id": "BuBbzIRXdhg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/BuBbzIRXdhg/sddefault.jpg",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "date_of_publication": "2022-12-29T00:00:00.000Z",
+    "video_host": "",
+    "stacks": [],
+    "state": "draft"
+  },
+  {
+    "id": 4,
+    "tutor_name": "midulive",
+    "video_name": "Aprende a usar estos métodos de Array en JavaScript para mejorar tu código",
+    "description": "No uses for ni forEach cuando tengas que buscar si un elemento de un Array cumple una condición. Usar el método Array.some() o Array.every() para iterar sobre un array es una forma más concisa y legible de hacerlo en comparación con un ciclo for. Estos métodos se conocen como métodos de reducción de arrays, ya que reducen un array a un único valor (un valor booleano en el caso de Array.some() y Array.every()). Por ejemplo, en el caso de Array.some(), se pasa una función de prueba como argumento y devuelve true si al menos un elemento del array pasa la prueba. Esto es útil cuando queremos verificar si hay al menos un elemento en el array que cumple cierta condición. En cambio, si usáramos un ciclo for, tendríamos que escribir código adicional para romper el ciclo y establecer una variable de bandera cuando encontremos el primer elemento que cumple la condición. De manera similar, Array.every() se utiliza para verificar si todos los elementos del array cumplen cierta condición. En lugar de tener que escribir código para verificar cada elemento del array y establecer una variable de bandera si algún elemento no cumple la condición, podemos usar Array.every() y obtener un resultado final de manera más concisa. En resumen, usar Array.some() y Array.every() es una forma más legible y concisa de iterar sobre un array y verificar si hay elementos que cumplen cierta condición, en comparación con el uso de un ciclo for. ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "video_id": "sVO65BeJjq8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/sVO65BeJjq8/sddefault.jpg",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "date_of_publication": "2022-12-19T00:00:00.000Z",
+    "video_host": "",
+    "stacks": [],
+    "state": "draft"
+  },
+  {
+    "id": 5,
+    "tutor_name": "Carlos Azaustre - Aprende JavaScript",
+    "video_name": "Haz tus mensajes de GIT Commit PROFESIONALES con CONVENTIONAL COMMITS",
+    "description": "¿Te gustaría mejorar tus mensajes de commit de una manera más semántica, profesional y que te sirva para automatizar ciertas tareas? Eso lo puedes conseguir con los Conventional Commits, una especificación para dotar de mayor significado y legibilidad al historial de cambios de tu repositorio.",
+    "video_id": "SigVVJmUGv8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/SigVVJmUGv8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCJgGc8pQO1lv04VXrBxA_Hg",
+    "stacks": [
+      "Git",
+      "GitHub"
+    ],
+    "date_of_publication": "2022-11-29T00:00:00.000Z",
+    "state": "publish"
+  },
+  {
+    "id": 6,
+    "tutor_name": "Carlos Azaustre - Aprende JavaScript",
+    "video_name": "5 conceptos de REACT AVANZADO para ser MEJOR PROGRAMADOR",
+    "description": "Te comparto 5 conceptos de programación avanzada con JavaScript para aumentar tus skills y nivel en programación.",
+    "video_id": "HsRn_DgJ7vU",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/HsRn_DgJ7vU/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCJgGc8pQO1lv04VXrBxA_Hg",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-11-14T00:00:00.000Z",
+    "state": "publish"
+  },
+  {
+    "id": 7,
+    "tutor_name": "midudev",
+    "video_name": "⚛️ REACT + TYPESCRIPT: Creando un proyecto desde cero y paso a paso (Tutorial en español)",
+    "description": "Aprende a crear una API REST con Node.js, Express y tipos, gracias a TypeScript.",
+    "video_id": "15VKbky2gB4",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/15VKbky2gB4/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-11-13T00:00:00.000Z",
+    "state": "publish"
+  },
+  {
+    "id": 8,
+    "tutor_name": "Carlos Azaustre - Aprende JavaScript",
+    "video_name": "GIT HOOKS: Mejora tu flujo de trabajo con HUSKY y LINT-STAGED",
+    "description": "Mejora tu flujo de desarrollo como programador, utilizando Git Hooks que se ejecuten antes de un commit, push, etc... y que comprueben si el Linter pasa correctamente, los test dan OK,... y así asegures que el código que subes a tu repositorio cumple un mínimo de calidad. Para ello tenemos herramientas como Husky y Lint-Staged que nos ayudan a configurarlo. Y en este video vemos como hacerlo.",
+    "video_id": "YWBrzwSDpo8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/YWBrzwSDpo8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCJgGc8pQO1lv04VXrBxA_Hg",
+    "stacks": [
+      "Git"
+    ],
+    "date_of_publication": "2022-11-08T00:00:00.000Z",
+    "state": "publish"
+  },
+  {
+    "id": 9,
+    "tutor_name": "Carlos Azaustre - Aprende JavaScript",
+    "video_name": "5 Conceptos de JAVASCRIPT AVANZADO que te harán MEJOR DEVELOPER",
+    "video_id": "7IKXP0NldBg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/7IKXP0NldBg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCJgGc8pQO1lv04VXrBxA_Hg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-10-12T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 10,
+    "tutor_name": "midulive",
+    "video_name": "CodelyTV: Programación Reactiva de 0 a 100 [miduConf]",
+    "video_id": "Hs18zNHu8tQ",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Hs18zNHu8tQ/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Programación Reactiva"
+    ],
+    "date_of_publication": "2022-10-11T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 11,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "5 ejemplos de DDD en TypeScript y Node",
+    "video_id": "bVCD46SQ0bg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/bVCD46SQ0bg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-10-06T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 12,
+    "tutor_name": "developedbyed",
+    "video_name": "Top 10 CSS One Liners That Will Blow Your Mind",
+    "video_id": "Xc6G3oV24yE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Xc6G3oV24yE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UClb90NQQcskPUGDIXsQEz5Q",
+    "stacks": [
+      "CSS3"
+    ],
+    "date_of_publication": "2022-10-05T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 13,
+    "tutor_name": "Vercel",
+    "video_name": "Why use a monorepo?",
+    "video_id": "flbz_5aMikw",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/flbz_5aMikw/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCLq8gNoee7oXM7MvTdjyQvA",
+    "stacks": [
+      "Monorepo"
+    ],
+    "date_of_publication": "2022-10-05T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 14,
+    "tutor_name": "Sonny Sangha",
+    "video_name": "🔴 Let's build Netflix 2.0 with REACT.JS! (Stripe Checkout & Webhooks, Redux, Firestore, Google Auth)",
+    "video_id": "HW5roUF2RLg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/HW5roUF2RLg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCqeTj_QAnNlmt7FwzNwHZnA",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-09-30T00:00:00.000Z",
+    "description": "",
+    "state": "draft"
+  },
+  {
+    "id": 15,
+    "tutor_name": "midulive",
+    "video_name": "Truco de Node.js: Usa cualquier puerto libre para tu servidor",
+    "video_id": "MzDtfEBWMVI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/MzDtfEBWMVI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Node.js"
+    ],
+    "date_of_publication": "2022-09-27T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 16,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "Cómo migrar +400k líneas de código a TypeScript | #laFunción 8x04",
+    "video_id": "vDpOt8dReEw",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/vDpOt8dReEw/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-09-27T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 17,
+    "tutor_name": "Leifer Mendez",
+    "video_name": "CONOCE la NUEVA herramienta para mejorar la velocidad de tu app",
+    "video_id": "ABftIDt6H6g",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/ABftIDt6H6g/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCgrIGp5QAnC0J8LfNJxDRDw",
+    "date_of_publication": "2022-09-27T00:00:00.000Z",
+    "state": "publish",
+    "description": "",
+    "stacks": []
+  },
+  {
+    "id": 18,
+    "tutor_name": "Juan Jose Ortiz",
+    "video_name": "¿Cómo organizar mis carpetas en un proyecto de React Js (2022)?",
+    "video_id": "Uusuaz9PIZQ",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Uusuaz9PIZQ/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCZsNpIxfqoIFECNJ8vHg7AA",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-09-26T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "tutor_name": "Wmedia por Juan Andrés Núñez",
+    "video_name": "JavaScript Object keys, values y entries + EJERCICIOS [JavaScript a Fondo #22]",
+    "video_id": "G5OQqW8Mvmc",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/G5OQqW8Mvmc/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCF6G2sF4DKlWvgfEGcm50FQ",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-26T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "tutor_name": "midulive",
+    "video_name": "¡Deja de usar ternarias para hacer esto en JavaScript! ❌",
+    "video_id": "YFES8Nm6uF4",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/YFES8Nm6uF4/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-25T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 21,
+    "tutor_name": "JavaScript Mastery",
+    "video_name": "Build and Deploy a Better Spotify 2.0 Clone Music App with React 18! (Tailwind, Shazam, Redux)",
+    "video_id": "I1cpb0tYV74",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/I1cpb0tYV74/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCmXmlB4-HJytD7wek0Uo97A",
+    "stacks": [
+      "React 18"
+    ],
+    "date_of_publication": "2022-09-23T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 22,
+    "tutor_name": "midulive",
+    "video_name": "La mejor estrategia de Git para trabajar con ramas y en equipo",
+    "video_id": "3FssKkNqUHE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/3FssKkNqUHE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Git"
+    ],
+    "date_of_publication": "2022-09-23T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 23,
+    "tutor_name": "midulive",
+    "video_name": "HOSTINGS gratis para tus proyectos con JAVASCRIPT. Alternativas a Heroku",
+    "video_id": "MI-8zK_DOKc",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/MI-8zK_DOKc/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-22T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 24,
+    "tutor_name": "Fazt",
+    "video_name": "React, Rutas protegidas con React Router v6",
+    "video_id": "42tFXd1PdCk",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/42tFXd1PdCk/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-09-21T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 25,
+    "tutor_name": "midulive",
+    "video_name": "Crea un cliente de API Rest en JavaScript con Proxy",
+    "video_id": "Ppos09yFpzA",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Ppos09yFpzA/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-20T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 26,
+    "tutor_name": "Carlos Azaustre - Aprende JavaScript",
+    "video_name": "Añade CACHÉ y FILTROS a tu API REST con NODE.js | Curso de Node.js",
+    "video_id": "rdreCLS-nJs",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/rdreCLS-nJs/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCJgGc8pQO1lv04VXrBxA_Hg",
+    "stacks": [
+      "Node.js"
+    ],
+    "date_of_publication": "2022-09-15T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 27,
+    "tutor_name": "Beyond Fireship",
+    "video_name": "Subtle, yet Beautiful Scroll Animations",
+    "video_id": "T33NN_pPeNI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/T33NN_pPeNI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC2Xd-TjJByJyK2w1zNwY0zQ",
+    "stacks": [
+      "CSS3"
+    ],
+    "date_of_publication": "2022-09-14T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 28,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "18. OBJECT.CREATE() Y OBJECT.ASSIGN()",
+    "video_id": "whIvWX7fxkU",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/whIvWX7fxkU/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-14T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 29,
+    "tutor_name": "Web Dev Simplified",
+    "video_name": "How To Send Push Notifications With JavaScript",
+    "video_id": "Bm0JjR4kP8w",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Bm0JjR4kP8w/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-10T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 30,
+    "tutor_name": "Beyond Fireship",
+    "video_name": "Social Media Style Number Formatting in JS",
+    "video_id": "FUngCjDzFDo",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/FUngCjDzFDo/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC2Xd-TjJByJyK2w1zNwY0zQ",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-09-04T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 31,
+    "tutor_name": "Web Dev Simplified",
+    "video_name": "CSS Transform Is Dead! Use This Instead",
+    "video_id": "416MT-VmJdI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/416MT-VmJdI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+    "stacks": [
+      "CSS3"
+    ],
+    "date_of_publication": "2022-09-03T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 32,
+    "tutor_name": "midulive",
+    "video_name": "Maquetando el efecto 3D del ticket de la MiduConf",
+    "video_id": "dHN5pP-OCog",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/dHN5pP-OCog/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-08-29T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 33,
+    "tutor_name": "midulive",
+    "video_name": "Array.at() - Nueva forma de acceder a elementos en JavaScript",
+    "video_id": "gSSjhChWYK4",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/gSSjhChWYK4/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-08-26T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 34,
+    "tutor_name": "midulive",
+    "video_name": "Crea un monorepositorio multipaquete con npm workspaces y releases de paquetes",
+    "video_id": "2QSBXhuqSlI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/2QSBXhuqSlI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Npm"
+    ],
+    "date_of_publication": "2022-08-21T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 35,
+    "tutor_name": "Carlos Azaustre - Aprende JavaScript",
+    "video_name": "Asi funcionan las PROMESAS y ASYNC/AWAIT en JAVASCRIPT || Entiende la Asincronía",
+    "video_id": "6O8ax3JYboc",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/6O8ax3JYboc/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCJgGc8pQO1lv04VXrBxA_Hg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-08-17T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 36,
+    "tutor_name": "Leifer Mendez",
+    "video_name": "Implementar API para enviar mensajes por WHATSAPP Gratis con NODE",
+    "video_id": "6bAp_cvZet8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/6bAp_cvZet8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCgrIGp5QAnC0J8LfNJxDRDw",
+    "stacks": [
+      "Node.js"
+    ],
+    "date_of_publication": "2022-08-11T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 37,
+    "tutor_name": "midulive",
+    "video_name": "🤯 3 EXTENSIONES de VSCODE para mejorar tu PRODUCTIVIDAD",
+    "video_id": "IDmHMDKKMWQ",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/IDmHMDKKMWQ/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "VSCode"
+    ],
+    "date_of_publication": "2022-08-09T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 38,
+    "tutor_name": "Antonio Sarosi",
+    "video_name": "No Uses el Código HTTP 403",
+    "video_id": "wk_PKHlHDDo",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/wk_PKHlHDDo/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCzTi9I3zApECTkukkMOpEEA",
+    "stacks": [
+      "HTTP"
+    ],
+    "date_of_publication": "2022-08-08T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 39,
+    "tutor_name": "midulive",
+    "video_name": "Principios SOLID en React.js (Buenas prácticas) con ejemplos prácticos",
+    "video_id": "jKdt-BnTTR0",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/jKdt-BnTTR0/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-07-29T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 40,
+    "tutor_name": "JavaScript Mastery",
+    "video_name": "I Abandoned Postman for This NEW VS Code Extension | Build, Test & Sell APIs 🤑",
+    "video_id": "MTrj3tNf9jA",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/MTrj3tNf9jA/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCmXmlB4-HJytD7wek0Uo97A",
+    "stacks": [
+      "VSCode"
+    ],
+    "date_of_publication": "2022-07-29T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 41,
+    "tutor_name": "Juan Jose Ortiz",
+    "video_name": "React Js: ¿Cómo animar tus transiciones de estado?",
+    "video_id": "-mmzLaiowVc",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/-mmzLaiowVc/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCZsNpIxfqoIFECNJ8vHg7AA",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-07-25T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 42,
+    "tutor_name": "midulive",
+    "video_name": "Nuevo Performance Insights de Google Chrome",
+    "video_id": "5pu7JvUNw6I",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/5pu7JvUNw6I/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Performance Insights"
+    ],
+    "date_of_publication": "2022-07-21T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 43,
+    "tutor_name": "midulive",
+    "video_name": "Cómo CONSUMIR una API REST con JAVASCRIPT y Fetch + Promises con gestión de Errores",
+    "video_id": "FJ-w0tf3d_w",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/FJ-w0tf3d_w/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-07-17T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 44,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "17. HERENCIA POR PROTOTIPOS EN JAVASCRIPT",
+    "video_id": "a2tp64Vtzxs",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/a2tp64Vtzxs/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-07-02T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 45,
+    "tutor_name": "GoncyPozzo",
+    "video_name": "Agregá una API a tus proyectos hosteados en Vercel",
+    "video_id": "1516539987",
+    "video_host": "twitch",
+    "tutor_channel_id": "goncypozzo",
+    "stacks": [
+      "Next.js"
+    ],
+    "date_of_publication": "2022-06-28T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 46,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "TypeScript: TYPES vs INTERFACES - Cuándo usar cada uno",
+    "video_id": "Knu3u8dZvM8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Knu3u8dZvM8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-06-16T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 47,
+    "tutor_name": "Vida MRR - Diseño y desarrollo web",
+    "video_name": "🔥 Sitio web PARALLAX con HTML, CSS y Javascript temática de Marvel Avengers",
+    "video_id": "THR7f2kMGEg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/THR7f2kMGEg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCOD6LXgeBoeiUZTsPLdG-0g",
+    "stacks": [
+      "HTML5"
+    ],
+    "date_of_publication": "2022-06-06T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 48,
+    "tutor_name": "Desarrollo Útil",
+    "video_name": "CUÁNDO se ejecuta USE EFFECT 🤔 El ARRAY de DEPENDECIAS 🔵 Curso de React desde cero #12",
+    "video_id": "8m6v98orJFk",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/8m6v98orJFk/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC25LsWhNNvxOL-1mataCp_Q",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-06-02T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 49,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "✨ 5 cosas que no sabías de #TypeScript",
+    "video_id": "hTTkC_fao3A",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/hTTkC_fao3A/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-06-02T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 50,
+    "tutor_name": "midudev",
+    "video_name": "😱 ¡CREA la ANIMACIÓN de VERCEL con HTML y CSS! Tutorial paso a paso",
+    "video_id": "18Hzm7aVzOA",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/18Hzm7aVzOA/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "HTML5",
+      "CSS3"
+    ],
+    "date_of_publication": "2022-05-20T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 51,
+    "tutor_name": "GoncyPozzo",
+    "video_name": "Haciendo landing pages gratis para ONGs (Adopcanem) con React + Next.js + ChakraUI",
+    "video_id": "1487188659",
+    "video_host": "twitch",
+    "tutor_channel_id": "goncypozzo",
+    "stacks": [
+      "Next.js"
+    ],
+    "date_of_publication": "2022-05-18T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 52,
+    "tutor_name": "Juan Jose Ortiz",
+    "video_name": "useEvent, ¿El nuevo hook de React para mejorar el rendimiento de nuestros componentes?",
+    "video_id": "LQzQllAi5hQ",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/LQzQllAi5hQ/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCZsNpIxfqoIFECNJ8vHg7AA",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-05-16T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 53,
+    "tutor_name": "midulive",
+    "video_name": "NODE 18: ¡PROBAMOS la nueva funcionalidad de TESTING! 🧪",
+    "video_id": "mT0c39ld80M",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/mT0c39ld80M/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Node.js"
+    ],
+    "date_of_publication": "2022-05-12T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 54,
+    "tutor_name": "midulive",
+    "video_name": "Decoradores en JavaScript. Explicación desde cero y con ejemplos.",
+    "video_id": "LkOA07F9ZCs",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/LkOA07F9ZCs/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-05-06T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 55,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "Crea tu aplicación TypeScript siguiendo DDD en 5 minutos",
+    "video_id": "-CYKxfnMTh4",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/-CYKxfnMTh4/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-05-03T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 56,
+    "tutor_name": "Juan Jose Ortiz",
+    "video_name": "5 Hooks que deberías conocer de React 18",
+    "video_id": "P25l9l3GZtE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/P25l9l3GZtE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCZsNpIxfqoIFECNJ8vHg7AA",
+    "stacks": [
+      "React 18",
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-05-02T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 57,
+    "tutor_name": "midulive",
+    "video_name": "🧑‍🏫 Repasando sintaxis moderna de JavaScript",
+    "video_id": "DHIVYEvQSDI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/DHIVYEvQSDI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-04-23T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 58,
+    "tutor_name": "midulive",
+    "video_name": "📚 ¿Qué es this en JavaScript? Explicación fácil, directa y sencilla con ejemplos",
+    "video_id": "byirHCoSPFY",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/byirHCoSPFY/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-04-18T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 59,
+    "tutor_name": "midudev",
+    "video_name": "🙀 ¡Con sólo CSS! IMPRESIONANTE efecto de OLAS en letras 🌊",
+    "video_id": "Bfvfi6Cr7JY",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Bfvfi6Cr7JY/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "CSS3"
+    ],
+    "date_of_publication": "2022-04-17T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 60,
+    "tutor_name": "midudev",
+    "video_name": "💡 AUTOMATIZA tareas con CHROME y AHORRA TIEMPO fácilmente (sin escribir código! 😱)",
+    "video_id": "qTNPpymYy9U",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/qTNPpymYy9U/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "Chrome DevTools"
+    ],
+    "date_of_publication": "2022-04-01T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 61,
+    "tutor_name": "Gentleman Programming",
+    "video_name": "Estructuramos en vivo un project de React usando conceptos de Clean Architecture - #part2",
+    "video_id": "XEcZaKK38fg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/XEcZaKK38fg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCbx_d228PdYwgB4Jz202SIQ",
+    "stacks": [
+      "Clean Architecture"
+    ],
+    "date_of_publication": "2022-03-27T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 62,
+    "tutor_name": "Gentleman Programming",
+    "video_name": "Cómo estructurar tu project de ReactJs? Aplicamos Clean Architecture en Front End - #part1",
+    "video_id": "5LqhlCd2_nE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/5LqhlCd2_nE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCbx_d228PdYwgB4Jz202SIQ",
+    "stacks": [
+      "Clean Architecture"
+    ],
+    "date_of_publication": "2022-03-12T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 63,
+    "tutor_name": "Web Dev Simplified",
+    "video_name": "How To Create Custom VSCode Snippets",
+    "video_id": "TGh2NpCIDlc",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/TGh2NpCIDlc/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+    "stacks": [
+      "VSCode"
+    ],
+    "date_of_publication": "2022-03-05T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 64,
+    "tutor_name": "Desarrollo Útil",
+    "video_name": "CÓMO configurar ESLINT y PRETTIER en REACT 🤒 sin romperte la cabeza! 😎 Curso de React desde cero #4",
+    "video_id": "3BHXuZvI4FI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/3BHXuZvI4FI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC25LsWhNNvxOL-1mataCp_Q",
+    "stacks": [
+      "ESLint",
+      "Prettier",
+      "React.js"
+    ],
+    "date_of_publication": "2022-02-13T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 65,
+    "tutor_name": "midulive",
+    "video_name": "✨ Cómo ordenar Arrays en JavaScript con sort y cómo hacerlo de forma aleatoria 🔀",
+    "video_id": "YIZWGn13RCE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/YIZWGn13RCE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-02-12T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 66,
+    "tutor_name": "Leifer Mendez",
+    "video_name": "Como Subir y Compartir Archivos con Nodejs y Angular | React la lógica es la misma?",
+    "video_id": "diJE8esd_V4",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/diJE8esd_V4/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCgrIGp5QAnC0J8LfNJxDRDw",
+    "stacks": [
+      "Node.js",
+      "Angular"
+    ],
+    "date_of_publication": "2022-02-03T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 67,
+    "tutor_name": "Juan Jose Ortiz",
+    "video_name": "¿Cuándo usar y cuando evitar useEffect en tus componentes?",
+    "video_id": "LIBM98IvhsY",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/LIBM98IvhsY/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCZsNpIxfqoIFECNJ8vHg7AA",
+    "stacks": [
+      "React.js",
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-01-20T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 68,
+    "tutor_name": "midulive",
+    "video_name": "La Mayoría No Sabe Cómo Funcionan Las Dependencias Del Package.JSON",
+    "video_id": "IfqX8T_g2xA",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/IfqX8T_g2xA/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "date_of_publication": "2022-01-16T00:00:00.000Z",
+    "state": "publish",
+    "description": "",
+    "stacks": []
+  },
+  {
+    "id": 69,
+    "tutor_name": "midulive",
+    "video_name": "💥 Array.flat y Array.flatMap ¡Domina estos nuevos métodos de JavaScript!",
+    "video_id": "em_Vh7ZGrnw",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/em_Vh7ZGrnw/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-01-08T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 70,
+    "tutor_name": "midulive",
+    "video_name": "Cómo configurar Eslint en un proyecto con Next.js ✅",
+    "video_id": "-iwidaMdtMM",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/-iwidaMdtMM/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Next.js",
+      "ESLint"
+    ],
+    "date_of_publication": "2021-12-26T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 71,
+    "tutor_name": "midulive",
+    "video_name": "✅ Mejorando un fetching de datos en React con mejores prácticas de JavaScript",
+    "video_id": "gBSB1QMMo7Y",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/gBSB1QMMo7Y/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "React.js",
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-12-19T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 72,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "DDD en TypeScript: Estructura de carpetas",
+    "video_id": "AJJRk7qmVHg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/AJJRk7qmVHg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript",
+      "DDD"
+    ],
+    "date_of_publication": "2021-11-28T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 73,
+    "tutor_name": "Antonio Sarosi",
+    "video_name": "La GENIALIDAD de GIT! Así es como FUNCIONA por DENTRO.",
+    "video_id": "LjwR--_ZUt8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/LjwR--_ZUt8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCzTi9I3zApECTkukkMOpEEA",
+    "stacks": [
+      "Git"
+    ],
+    "date_of_publication": "2021-11-27T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 74,
+    "tutor_name": "midulive",
+    "video_name": "Callbacks 🆚 Promises en JavaScript. ¡Entiende las diferencias y la importancia de cada una!",
+    "video_id": "frm0CHyeSbE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/frm0CHyeSbE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-10-25T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 75,
+    "tutor_name": "midulive",
+    "video_name": "TypeScript, tipos genéricos. ¡Mejora la reutilización de tu código!",
+    "video_id": "g16brokfrQw",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/g16brokfrQw/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2021-10-23T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 76,
+    "tutor_name": "midulive",
+    "video_name": "Descubre GIT SWITCH y te enseño a crear una Pull Request paso a paso",
+    "video_id": "MKH8WRwoqZo",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/MKH8WRwoqZo/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Git"
+    ],
+    "date_of_publication": "2021-10-21T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 77,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "5 cosas que puedes hacer en TypeScript y no en JavaScript",
+    "video_id": "uVZftVlvwmY",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/uVZftVlvwmY/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "TypeScript",
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-07-08T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 78,
+    "tutor_name": "Gonzalo Pozzo",
+    "video_name": "Mejorando la UI y UX del ecommerce open source (NextJS, ChakraUI, TypeScript, Cypress, React testing",
+    "video_id": "OxRXnkQB5d8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/OxRXnkQB5d8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+    "stacks": [
+      "Next.js",
+      "ChakraUI",
+      "TypeScript",
+      "Cypress"
+    ],
+    "date_of_publication": "2021-06-30T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 79,
+    "tutor_name": "Wmedia por Juan Andrés Núñez",
+    "video_name": "Tutorial Promesas JavaScript 2021",
+    "video_id": "9AbdrNR1vFU",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/9AbdrNR1vFU/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCF6G2sF4DKlWvgfEGcm50FQ",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-05-28T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 80,
+    "tutor_name": "midudev",
+    "video_name": "❌ EVITA usar SWITCH en tu JAVASCRIPT - (Buenas Prácticas ✅)",
+    "video_id": "0NlsJuwFsrQ",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/0NlsJuwFsrQ/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-05-15T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 81,
+    "tutor_name": "midulive",
+    "video_name": "Cómo ITERAR un OBJETO en JAVASCRIPT . Respuesta de API en forma de objeto",
+    "video_id": "Mz9HSiXSSVU",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Mz9HSiXSSVU/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript",
+      "API"
+    ],
+    "date_of_publication": "2021-05-03T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 82,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "15. THIS EN JAVASCRIPT (bind, call, apply y más)",
+    "video_id": "bS71_W_BDFE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/bS71_W_BDFE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-03-03T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 83,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "CÓMO ELEGIR EL NOMBRE \"PERFECTO\" PARA TU VARIABLE EN JAVASCRIPT",
+    "video_id": "iYI3YvdsUWw",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/iYI3YvdsUWw/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2020-12-23T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 84,
+    "tutor_name": "Fazt",
+    "video_name": "JSDoc, Documentación en Javascript | Curso Práctico",
+    "video_id": "r0H-acWQS6c",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/r0H-acWQS6c/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "JavaScript",
+      "JSDoc"
+    ],
+    "date_of_publication": "2020-12-15T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 85,
+    "tutor_name": "Fazt",
+    "video_name": "Editores de Código & IDEs en la nube",
+    "video_id": "JUtHx3VYBqc",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/JUtHx3VYBqc/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "IDES"
+    ],
+    "date_of_publication": "2020-12-12T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 86,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "19. MAP, FILTER y REDUCE EN JAVASCRIPT",
+    "video_id": "tP8JiVUiyDo",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/tP8JiVUiyDo/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2020-11-16T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 87,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "21. CLAUSURAS (Closures) EN JAVASCRIPT",
+    "video_id": "JXG_gQ0OF74",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/JXG_gQ0OF74/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2020-10-06T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 88,
+    "tutor_name": "Web Dev Simplified",
+    "video_name": "Learn React Portal In 12 Minutes By Building A Modal",
+    "video_id": "LyLa7dU5tp8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/LyLa7dU5tp8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+    "stacks": [
+      "React.js",
+      "React Portal"
+    ],
+    "date_of_publication": "2020-08-08T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 89,
+    "tutor_name": "BettaTech",
+    "video_name": "Patrón DECORATOR con CÓDIGO | Ejemplo REAL",
+    "video_id": "Ab9HxiPLryg",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/Ab9HxiPLryg/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCSf6S_PAhXsqGMTPDiKgdRg",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2020-06-06T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 90,
+    "tutor_name": "midudev",
+    "video_name": "CSS Grid, Infinite Scroll y Tests en nuestra app de React",
+    "video_id": "oCHdFiCgOSE",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/oCHdFiCgOSE/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "React.js",
+      "CSS3"
+    ],
+    "date_of_publication": "2020-05-15T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 91,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "Clean Architecture: La mejor forma de escalar y mantener tu código",
+    "video_id": "y3MWfPDmVqo",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/y3MWfPDmVqo/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "stacks": [
+      "Clean Architecture"
+    ],
+    "date_of_publication": "2020-05-09T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 92,
+    "tutor_name": "CodelyTV - Redescubre la programación",
+    "video_name": "30 TRUCOS DE PROGRAMACIÓN QUE DEBES SABER en 10 MINUTOS",
+    "video_id": "BLMyZh2AuT8",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/BLMyZh2AuT8/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UC9IKtxn9AIGelnYmwYr0Lxw",
+    "date_of_publication": "2020-04-23T00:00:00.000Z",
+    "state": "publish",
+    "description": "",
+    "stacks": []
+  },
+  {
+    "id": 93,
+    "tutor_name": "La Cocina del Código",
+    "video_name": "¿QUÉ ES EL HOISTING en JAVASCRIPT? | JS en ESPAÑOL",
+    "video_id": "uI6o97A4IrI",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/uI6o97A4IrI/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCY2ogSxB2beBNBRMKU_dXzA",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2020-03-05T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 94,
+    "tutor_name": "Fazt",
+    "video_name": "Typescript | ¿Qué es Typescript y porqué aprenderlo?",
+    "video_id": "wXBl5tZm-OQ",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/wXBl5tZm-OQ/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2019-11-29T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  },
+  {
+    "id": 95,
+    "tutor_name": "Fazt",
+    "video_name": "Visual Studio Code - Mi Configuración 2019",
+    "video_id": "tZTpKF2pkQo",
+    "link_video_thumbnail": "https://i.ytimg.com/vi/tZTpKF2pkQo/sddefault.jpg",
+    "video_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "VSCode"
+    ],
+    "date_of_publication": "2019-05-16T00:00:00.000Z",
+    "state": "publish",
+    "description": ""
+  }
+]

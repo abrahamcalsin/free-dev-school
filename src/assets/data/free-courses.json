@@ -1,0 +1,528 @@
+[
+  {
+    "id": 1,
+    "tutor_name": "midulive",
+    "course_name": "Custom Hooks + Testing con Playwright: Curso de React desde cero - Parte 4",
+    "description": "En esta clase aprenderás a refactorizar tus componentes y descubrirás cómo crear tus propios Custom Hooks. 📚 Curso de React completo: https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29 👨‍💻 Código del proyecto: https://github.com/midudev/aprendiendo-react/tree/master/projects/04-react-prueba-tecnica ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "course_id": "x-LcbVw99o8",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/x-LcbVw99o8/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [],
+    "date_of_publication": "2023-04-12T00:00:00.000Z",
+    "state": "draft",
+    "publication_status": null
+  },
+  {
+    "id": 2,
+    "tutor_name": "Fazt Code",
+    "course_name": "Tu Primer Aplicación Web en Nextjs13",
+    "description": "En este tutorial de Nextjs 13, aprenderas a crear tu primera aplicacion de inicio a fin, al mismo tiempo que también podras practicar caracteristicas fundamentales del Framework como los React Server Components (RSC), la carpeta app, Routing, fetch de datos y estilizar la aplicacion para finalmente desplegarlo gratuitamente en Vercel. Índice del Curso 00:00 Introducción 01:21 Configuración del Proyecto 09:49 Pages 12:04 Link 19:30 Fetch 24:58 Users Component 29:24 Client Component 34:53 User Details 43:57 Bootstrap 54:13 Deploy en Vercel ⭐ Cursos Recomendados Curso de React ⮕https://youtu.be/rLoWMU4L_qE Curso de Nodejs ⮕https://youtu.be/i3OdKwuBjeM Curso de Expess ⮕https://youtu.be/JmJ1WUoUIK4 Curso de Mongodb ⮕https://youtu.be/lWMemPN9t6Q 🗣 Redes Sociales ⮕ Twitter https://twitter.com/fazttech 🎒 Servicios Recomendados DigitalOcean ⮕ https://m.do.co/c/8ef261d77de5 Namecheap ⮕ https://namecheap.pxf.io/ErDe9 Ledger ⮕ (Hardware Wallet) https://bit.ly/3ijsVNW SiteGround  ⮕ https://bit.ly/31u9ZEk Cloudinary  ⮕ https://bit.ly/3ohNlJ7 🌎 Sitio Web https://fazt.dev #nextjs #vercel #reactjs",
+    "course_id": "H_s-xM6Ii1g",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/H_s-xM6Ii1g/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCMn28O1sQGochG94HdlthbA",
+    "stacks": [],
+    "date_of_publication": "2023-04-09T00:00:00.000Z",
+    "state": "draft",
+    "publication_status": null
+  },
+  {
+    "id": 3,
+    "tutor_name": "midulive",
+    "course_name": "Curso de React desde cero: Crea un videojuego y una aplicación para aprender useState y useEffect",
+    "description": "¡Aprende a usar useState y useEffect desarrollando el videojuego de 3 en raya! 00:00 - Instalación y configuración ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "course_id": "qkzcjwnueLA",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/qkzcjwnueLA/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2023-04-06T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": "recent"
+  },
+  {
+    "id": 4,
+    "tutor_name": "midulive",
+    "course_name": "Curso de React [2023]: De cero hasta crear tus primeros componentes con estado",
+    "description": "Curso de React desde cero. ¿Qué es? ¿Por qué deberías aprenderlo? ¿Cómo crear tu primera aplicación? Todo lo que necesitas saber para empezar lo tienes en este vídeo. 👨‍💻 Repositorio de código: https://github.com/midudev/aprendiendo-react 💬 ¿Dudas de React? Pregunta aquí: https://discord.gg/midudev 🔴 No te pierdas más directos en: https://www.twitch.tv/midudev SEGMENTOS 00:00 - Introducción 01:30 - ¿Qué es React? 04:23 - Aviso sobre la documentación 07:10 - ¿De dónde sale React? 09:39 - 7 razones para aprender React 18:50 - ¿Por qué React? Creando un botón sin React 26:38 - Cómo usar React sin dependencias 30:00 - Crea tu primer elemento 31:45 - Elemento con atributos 34:30 - Fragment 36:00 - JSX desde cero 44:00 - Crea tu primera aplicación con React 54:00 - Crear componentes en React 58:20 - Tu primer proyecto práctico con React 01:02:50 - Estilos en React 01:09:29 - Reutilización de componentes: Props 01:14:15 - Estila contenedor para separaciones y no componentes 01:15:50 - Pasando booleanos como props 01:18:30 - Pasando funciones como props 01:21:20 - Elementos como props 01:23:10 - Diferencia entre elemento y componente 01:24:50 - Las props son inmutables 01:26:50 - La prop especial children 01:34:00 - Pasar objeto como props 01:36:27 - State en React",
+    "course_id": "7iobxzd_2wY",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/7iobxzd_2wY/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2023-04-04T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": "recent"
+  },
+  {
+    "id": 5,
+    "tutor_name": "midulive",
+    "course_name": "Introducción a JavaScript: ¿Qué es? Tipos de datos. Estructuras de control y funciones.",
+    "description": "Primera clase del curso de Aprende JavaScript 00:00 - Introducción 01:46 - Importancia de JavaScript 13:20 - Usando consola del navegador 18:20 - Tipos de datos 33:04 - Operadores de comparación 40:46 - null y undefined 43:30 - BigInit y Symbol 47:32 -  Guardando valores (Variables) 58:30 -  Estructuras de control IF 01:06:53 -  Estructuras de control WHILE 01:18:58 -  Expresiones y declaraciones 01:23:52 -  Estructuras de control FOR 01:31:14 -  Comentarios en Código 01:26:25 -  Reto de este modulo 01:37:45 -  Funciones 01:55:00 -  Ultimas palabras y comentarios",
+    "course_id": "Z34BF9PCfYg",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/Z34BF9PCfYg/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2022-12-23T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": "recent"
+  },
+  {
+    "id": 6,
+    "tutor_name": "midulive",
+    "course_name": "📚 Curso de Next.js 13 desde cero",
+    "description": "Curso desde cero para aprender todo lo que necesitas sobre Next.js 13.",
+    "course_id": "tA-_vAz9y78",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/tA-_vAz9y78/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Next.js 13",
+      "Next.js"
+    ],
+    "date_of_publication": "2022-11-04T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": "recent"
+  },
+  {
+    "id": 7,
+    "tutor_name": "midulive",
+    "course_name": "Curso de Test Driven Development desde Cero con JavaScript, React y Vitest",
+    "description": "Introducción al TDD (Test Driven Development), el desarrollo de software guiado a base de pruebas. Empezamos con ejemplos básicos y terminamos usando TDD para construir una calculadora con React.",
+    "course_id": "_t9l2TwGioc",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/_t9l2TwGioc/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "Test Driven Development",
+    "stacks": [
+      "Test Driven Development"
+    ],
+    "date_of_publication": "2022-09-28T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 8,
+    "tutor_name": "Gentleman Programming",
+    "course_name": "Creamos una app en React ! buenas prácticas, clean architecture, redux, context y Typescript !",
+    "description": "¡Buenas, buenas mi gente! Creamos una app en React ! 🤪🤪 Hacemos una prueba técnica para position SENIOR con #Redux, #Context, #Axios, #CleanArchitecture, #Typescript, #buenasprácticas y más A por ello !",
+    "course_id": "p9PAmqpCWgA",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/p9PAmqpCWgA/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCbx_d228PdYwgB4Jz202SIQ",
+    "stacks": [
+      "Clean Architecture"
+    ],
+    "date_of_publication": "2022-09-04T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 9,
+    "tutor_name": "Fazt",
+    "course_name": "Nodejs Curso Práctico desde Cero (Javascript en el Backend)",
+    "description": "Este es un curso de nodejs enfocado en desarrolladores web Frontend principiantes que ya conocen Javascript y HTML, y ahora quieren empezar con su primer lenguaje de backend. En este curso podras usar todo lo que ya conoces de Javascript del navegador pero ahora usado en la creacion de aplicaciones de servidor. Nodejs es un entorno de ejecución de Javascript o Javascript runtime environment el cual permite ejecutar código no bloqueante en el backend usando Javascript como lenguaje para poder crear herramientas como aplicaciones de consola (CLI), codigo de servidor, aplicaciones desktop o aplicaciones moviles. Gracias a Nodejs el ecosistema de Javascript es tan grande. Ademas al añadir Javascript en el backend (Javascript Server Side) es posible crear aplicaciones completas usando solo un lenguaje (FullStack Javascript) Curso Básico de Javascript ➜ https://youtu.be/RqQ1d1qEWlE",
+    "course_id": "i3OdKwuBjeM",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/i3OdKwuBjeM/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "Node.js"
+    ],
+    "date_of_publication": "2022-08-20T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 10,
+    "tutor_name": "midulive",
+    "course_name": "CURSO de NEXT.JS 12 desde CERO y con dos proyectos prácticos",
+    "description": "Creamos un proyecto desde cero con Next.js",
+    "course_id": "pFT8wD2uRSE",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/pFT8wD2uRSE/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "Next.js",
+      "Next.js 12"
+    ],
+    "date_of_publication": "2022-08-15T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 11,
+    "tutor_name": "Fazt",
+    "course_name": "Curso de Reactjs desde Cero para principiantes 2022",
+    "description": "React es una biblioteca de Javascript para crear interfaces web de usuario, tipicamente se usa para crear aplicaciones web frontend. En este curso de React aprenderás las bases necesarias de React como componentes (Components), props, estado (useState), hooks, estilos, useContext, useEffect, ademas de usar otras herramientas como create-react-app, vitejs, tailwindcss, react-icons y otras mas bibliotecas de npm (Nodejs). Este un curso enfocado en principiantes asi que si no sabes nada de React, este es tu punto de partida. 🎥 Videos Recomendados: HTML ➜ https://youtu.be/rbuYtrNUxg4 CSS ➜ https://youtu.be/W6GTDfrWjXs Javascript ➜ https://youtu.be/RqQ1d1qEWlE Curso de Nodejs ➜ https://youtu.be/BhvLIzVL8_o Curso de Git ➜ https://youtu.be/HiXLkL42tMU",
+    "course_id": "rLoWMU4L_qE",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/rLoWMU4L_qE/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCX9NJ471o7Wie1DQe94RVIg",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-08-11T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 12,
+    "tutor_name": "Vida MRR - Diseño y desarrollo web",
+    "course_name": "GUÍA COMPLETA DE GRID ANIMADA | CURSO CSS",
+    "description": "En este curso vas a aprender a usar Grid con CSS, todas sus propiedades y formas de usarlo para el diseño de tus sitios o aplicaciones web. #grid #css #cursogratis #desarrolloweb Curso para aprender FLEXBOX https://youtu.be/EVBlLkfh2V0",
+    "course_id": "Fj6BGtNvXIc",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/Fj6BGtNvXIc/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCOD6LXgeBoeiUZTsPLdG-0g",
+    "stacks": [
+      "CSS3"
+    ],
+    "date_of_publication": "2022-07-11T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 13,
+    "tutor_name": "Vida MRR - Diseño y desarrollo web",
+    "course_name": "🔥 Curso PRACTICO de CSS AVANZADO 🧪",
+    "description": "En este curso vamos a aprender todas las nuevas características que van a venir en CSS los próximos meses. Desde usar subgrid, container queries, colores hwb, P3 y :has para que empieces a familiarizarte con las nuevas características #css #curso #desarrolloweb",
+    "course_id": "O5rejMtUJz8",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/O5rejMtUJz8/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCOD6LXgeBoeiUZTsPLdG-0g",
+    "stacks": [
+      "CSS3"
+    ],
+    "date_of_publication": "2022-06-20T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 14,
+    "tutor_name": "jonmircha",
+    "course_name": "Curso Markdown - jonmircha",
+    "description": "En este curso te enseño Markdown un lenguaje de marcado ligero para la publicación de contenido basado en texto plano.",
+    "course_id": "FlsoBiteuPM",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/FlsoBiteuPM/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCXR7VjA26PcHP3vb6F2X3VQ",
+    "stacks": [
+      "Markdown"
+    ],
+    "date_of_publication": "2022-06-10T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 15,
+    "tutor_name": "Vida MRR - Diseño y desarrollo web",
+    "course_name": "CURSO COMPLETO PARA APRENDER NEXTJS",
+    "description": "En este curso gratuito de Nextjs vamos a aprender a crear una tienda online usando los conceptos más importantes para el manejo de rutas, el data fetching y el manejo del estado con Nextjs. #nextjs #desarrolloweb #cursos #sitioWebCompleto #cursoGratis",
+    "course_id": "avGmwUzGJKA",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/avGmwUzGJKA/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCOD6LXgeBoeiUZTsPLdG-0g",
+    "stacks": [
+      "Next.js"
+    ],
+    "date_of_publication": "2022-05-02T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 16,
+    "tutor_name": "midudev",
+    "course_name": "GitHub Actions TUTORIAL Desde Cero - Integración continua (CI/CD)",
+    "description": "Aprende desde cero a automatizar de forma gratuita y fácil tus despliegues. Domina la integración continua con GitHub Actions de forma fácil, gratis y rápida. 🔥",
+    "course_id": "sIhm4YOMK6Q",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/sIhm4YOMK6Q/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "GitHub Actions"
+    ],
+    "date_of_publication": "2022-04-25T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 17,
+    "tutor_name": "midudev",
+    "course_name": "CURSO REACT NATIVE desde CERO",
+    "description": "React Native te permite desarrollar una aplicación para iOS, Android y Web, compartiendo el código entre los diferentes dispositivos. Lo mejor ese que si ya sabes React, no tienes que aprender mucho más. Clase basada en el original FullStack Open que tiene toda la atribución al contenido de la clase: https://fullstackopen.com/es/ En este curso de 4 horas vamos a crear una aplicación de React Native desde cero para iOS, aunque el código podría funcionar para diferentes dispositivos.",
+    "course_id": "qi87b6VcIHY",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/qi87b6VcIHY/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "React Native"
+    ],
+    "date_of_publication": "2022-04-20T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 18,
+    "tutor_name": "midudev",
+    "course_name": "📘 Tutorial TypeScript con Node.js y Express. ¡Crea tu API REST con tipos estáticos DESDE CERO!",
+    "description": "Aprende a crear una API REST con Node.js, Express y tipos, gracias a TypeScript. Clase basada en el original FullStack Open que tiene toda la atribución al contenido de la clase: https://fullstackopen.com/es/",
+    "course_id": "ZpY5KdGQvwI",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/ZpY5KdGQvwI/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-04-06T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 19,
+    "tutor_name": "midulive",
+    "course_name": "📚 APRENDE TYPESCRIPT desde cero con este curso OFICIAL de MICROSOFT",
+    "description": "Aprendiendo paso a paso TypeScript siguiendo el curso oficial de Microsoft. ¡GRATIS! ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "course_id": "YKclM8IxkfI",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/YKclM8IxkfI/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "TypeScript"
+    ],
+    "date_of_publication": "2022-03-20T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 20,
+    "tutor_name": "Gentleman Programming",
+    "course_name": "Master class Custom hooks en React, ciclo de vida del componente, aumenta la performance 100%",
+    "description": "¡Buenas, buenas mi gente ! Voy a dar una master class sobre React custom hooks y ciclos de vida de componentes el 18 de Marzo a las 23 Horas España en el increible server de \"Code Societey\" por parte de Jhonny Barrios  !!! Es GRATIS y también lo transmitiré en directo por YouTube, espero que les guste. ¡A por ello! Link a repositorio: https://github.com/AppleLAN/CustomhooksClass",
+    "course_id": "HmudQUYnQQg",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/HmudQUYnQQg/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCbx_d228PdYwgB4Jz202SIQ",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-03-18T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 21,
+    "tutor_name": "midulive",
+    "course_name": "Curso de Framer Motion desde cero - Animaciones para tu proyecto con React",
+    "description": "¡APRENDE a crear animaciones atractivas para tu aplicación de React gracias a la sencillez de Framer Motion! 👍 Código: https://github.com/midudev/react-todo-app-with-framer-motion",
+    "course_id": "4HnLIAX0EoM",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/4HnLIAX0EoM/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Framer Motion"
+    ],
+    "date_of_publication": "2022-03-16T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 22,
+    "tutor_name": "freeCodeCamp Español",
+    "course_name": "Aprende React Desde Cero - Curso de React Con Proyectos",
+    "description": "Aprende los fundamentos de React en este curso desde cero. Crearás cuatro proyectos paso a paso y aprenderás los fundamentos para comenzar a crear aplicaciones web interactivas con React. ✏️ Curso creado por: Estefania Cassingena Navone. Síguela en Twitter https://twitter.com/EstefaniaCassN. 💻 Código en GitHub: 🔗 Proyecto 1: https://github.com/estefaniacn/testim... 🔗 Proyecto 2: https://github.com/estefaniacn/contad... 🔗 Proyecto 3: https://github.com/estefaniacn/calcul... 🔗 Proyecto 4: https://github.com/estefaniacn/aplica... 🔗 Proyecto 1 Componentes de Clase :https://github.com/estefaniacn/testim... 🔗 Proyecto 2 Componentes de Clase: https://github.com/estefaniacn/contad...",
+    "course_id": "6Jfk8ic3KVk",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/6Jfk8ic3KVk/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC1emV4A8liRs9p80CY8ElUQ",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2022-03-15T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 23,
+    "tutor_name": "midulive",
+    "course_name": "Aprende Rust 🦀 desde cero, el lenguaje de programación de moda 🚀",
+    "description": "Rust es un lenguaje de programación compilado, de propósito general y multiparadigma que está siendo desarrollado por Mozilla. ​ Ha sido diseñado para ser \"un lenguaje seguro, concurrente y práctico\". Últimamente está en boca de todos. ¿Por qué será? ¡Lo aprendemos juntos desde cero! ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "course_id": "WMeM7-JswKQ",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/WMeM7-JswKQ/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "Rust"
+    ],
+    "date_of_publication": "2022-01-11T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 24,
+    "tutor_name": "Gonzalo Pozzo",
+    "course_name": "Workshop introductorio a Next.js 12",
+    "description": "Buenas! Soy Gonzalo Pozzo (aka goncy) y soy solution architect en Vercel, estoy en proceso de armar un workshop oficial de Vercel para dar presencial en la ciudad de Mar del Plata, Buenos Aires, Argentina. Este video es un test run interno hecho en la comunidad para probar el contenido y la dinámica así que no tiene mucha preparación y el contenido no es final, todo feedback es bienvenido 🙌 Slides: https://docs.google.com/presentation/... Repo: https://github.com/goncy/nextjs-initi...",
+    "course_id": "RedBO7tCt48",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/RedBO7tCt48/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+    "stacks": [
+      "Next.js"
+    ],
+    "date_of_publication": "2021-12-29T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 25,
+    "tutor_name": "midulive",
+    "course_name": "Aprendiendo Tailwind CSS desde Cero. ¡Estila más rápido! ⚡",
+    "description": "Tailwind CSS es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con facilidad en el código HTML y unos flujos de desarrollo que permiten optimizar mucho el peso del código CSS. Tailwind CSS es una potente herramienta para el desarrollo frontend. ▶ No te pierdas más directos en: https://www.twitch.tv/midudev",
+    "course_id": "h5HQVHTpeHs",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/h5HQVHTpeHs/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC3aj05GEEyzdOqYM5FLSFeg",
+    "stacks": [
+      "TailwindCSS"
+    ],
+    "date_of_publication": "2021-10-06T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 26,
+    "tutor_name": "freeCodeCamp Español",
+    "course_name": "Aprende JavaScript - Curso Completo desde Cero",
+    "description": "En este curso completo de JavaScript aprenderás todo lo que necesitas saber para comenzar a trabajar este lenguaje de programación paso a paso con ejemplos. ✍️ Creado por: Estefania Cassingena Navone (@EstefaniaCassN). 💡 Código en GitHub: https://github.com/estefaniacn/freeco...",
+    "course_id": "ivdTnPl1ND0",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/ivdTnPl1ND0/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC1emV4A8liRs9p80CY8ElUQ",
+    "stacks": [
+      "JavaScript"
+    ],
+    "date_of_publication": "2021-08-24T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 27,
+    "tutor_name": "Gentleman Programming",
+    "course_name": "Qué es y cómo implementar Atomic Design en tu página web ? ⚛️⚛️ portfolio en ReactJs",
+    "description": "Buenas buenas mi gente !! Perdón la demora ! estuve realizando este portfolio para ustedes utilizando ReactJs purísimo para esta nueva tira de videos sobre conceptos a implementar para crear sus propios projects !! No son conceptos cerrados solo para ReactJS, se pueden implementar en cualquier framework ya sea Angular, VueJS o cualquiera quieran. En la primer clase sobre creación de apps web vamos a ver ATOMIC DESIGN, a forma de resumen, es la manera correcta de pensar como estructurar sus aplications para que sean super mantenibles y modificables. A por ello !!",
+    "course_id": "Q6dJ7Gcm3Nw",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/Q6dJ7Gcm3Nw/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCbx_d228PdYwgB4Jz202SIQ",
+    "stacks": [
+      "Atomic Design"
+    ],
+    "date_of_publication": "2021-08-11T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 28,
+    "tutor_name": "Gonzalo Pozzo",
+    "course_name": "Instalando y configurando ESLint con nuestras reglas en nuestros proyectos",
+    "description": "Aprendemos a instalar y configurar ESLint en nuestros proyectos, para evitar errores y forzar un estilo de código.",
+    "course_id": "jzmMa7WpREE",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/jzmMa7WpREE/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+    "stacks": [
+      "ESLint"
+    ],
+    "date_of_publication": "2021-06-28T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 29,
+    "tutor_name": "Gonzalo Pozzo",
+    "course_name": "Agregando tests de integracion con Cypress a una app NextJS con SSR",
+    "description": "Usamos mi método polémico para testear aplicaciones que tienen server side rendering usando Cypress.",
+    "course_id": "6nEMt35-zBM",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/6nEMt35-zBM/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+    "stacks": [
+      "Cypress"
+    ],
+    "date_of_publication": "2021-06-28T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 30,
+    "tutor_name": "Gonzalo Pozzo",
+    "course_name": "Intro desde 0 a ChakraUI con TypeScript",
+    "description": "Hacemos una intro desde como instalar ChakraUI hasta como usar el theming y algunos componentes",
+    "course_id": "noRAYtyFilU",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/noRAYtyFilU/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+    "stacks": [
+      "ChakraUI"
+    ],
+    "date_of_publication": "2021-06-27T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 31,
+    "tutor_name": "midudev",
+    "course_name": "Aprendiendo NextJS, el framework de React con Server Side Rendering",
+    "description": "NextJS es el framework más famoso de React. Nos proporciona muchas facilidades para desarrollar apps con la biblioteca de Facebook como un sistema de rutas basado en archivos físicos, ServerSide Rendering, generación de archivos estáticos, React Fast Refresh y mucho más. Código en: https://github.com/midudev/curso-next...",
+    "course_id": "2jxc8DMzt0I",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/2jxc8DMzt0I/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "Next.js"
+    ],
+    "date_of_publication": "2020-07-24T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 32,
+    "tutor_name": "midudev",
+    "course_name": "Curso REACT JS - Aprende desde CERO Componentes, State, JSX",
+    "description": "Te enseño React desde cero. 👨‍🏫 ¿Qué es React? ¿Por qué deberías aprenderlo? ¿Por qué lo necesitamos? ¿Qué es JSX 🤔? Props y State. Eventos. Renderizado condicional y useState. 🔥",
+    "course_id": "T_j60n1zgu0",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/T_j60n1zgu0/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "React.js"
+    ],
+    "date_of_publication": "2020-04-10T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  },
+  {
+    "id": 33,
+    "tutor_name": "midudev",
+    "course_name": "Introducción a Svelte JS: ¿Qué es Svelte? (CURSO de Svelte Desde Cero)",
+    "description": "Descubre qué es el framework Svelte JS, qué ofrece, en qué se diferencia y cómo es su sintaxis. El framework con mejor tendencia este 2021. 🔥 Lee el artículo completo 📖: https://midu.dev/introducci%C3%B3n-a-... Más clases de Svelte 🔶: 1ª clase: 👨‍🏫 Introducción a Svelte: https://www.youtube.com/watch?v=Xsxm8... 2ª clase: 🚀 Iniciando un proyecto con Svelte: https://www.youtube.com/watch?v=VTkDu... 3ª clase: 🧩 Componentes y State: https://www.youtube.com/watch?v=B4obf... 4ª clase ⚡ Declaraciones reactivas: https://youtu.be/n3T_vbCJ1nY 5ª clase 🔀 Renderizado condicional: https://youtu.be/r2ZX_Awv3WU Repositorio de código 👨‍💻: https://github.com/midudev/curso-grat...",
+    "course_id": "Xsxm8_BI63s",
+    "link_course_thumbnail": "https://i.ytimg.com/vi/Xsxm8_BI63s/sddefault.jpg",
+    "course_host": "youtube",
+    "tutor_channel_id": "UC8LeXCWOalN8SxlrPcG-PaQ",
+    "stacks": [
+      "Svelte"
+    ],
+    "date_of_publication": "2019-08-31T00:00:00.000Z",
+    "state": "publish",
+    "publication_status": null
+  }
+]
