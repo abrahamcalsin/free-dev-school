@@ -1,22 +1,23 @@
-import { useQuery } from "@apollo/client";
 import { Alert, AlertIcon, AlertTitle, Spinner } from "@chakra-ui/react";
+import { useQuery } from "@tanstack/react-query";
 
 import { Introduction } from "~/components/introduction";
 import Meta from "~/components/meta";
-import { moreFreeResourcesQuery } from "~/gql/queries";
 import { MainLayout } from "~/layouts";
-import { MoreFreeResourcesQueryResponsePayload } from "~/typings";
+import { getMoreFreeResources } from "~/services/more-free-resources";
 
 import { Content } from "./components/content";
 import { MoreFreeResourcesSearchBox } from "./components/more-free-resources-search-box";
 
 export function MoreFreeResourcesScreen() {
-  const { loading, data, error } =
-    useQuery<MoreFreeResourcesQueryResponsePayload>(moreFreeResourcesQuery);
+  const { isLoading, data, error } = useQuery({
+    queryKey: ["moreFreeResources"],
+    queryFn: getMoreFreeResources,
+  });
 
-  const moreFreeResources = data?.moreFreeResources ?? [];
+  const moreFreeResources = data ?? [];
 
-  if (loading) {
+  if (isLoading) {
     return (
       <MainLayout>
         <Spinner size="lg" />
@@ -45,8 +46,8 @@ export function MoreFreeResourcesScreen() {
       programadores."
         titleCount={moreFreeResources.length}
       />
-      <MoreFreeResourcesSearchBox />
-      <Content />
+      <MoreFreeResourcesSearchBox data={moreFreeResources} />
+      <Content data={moreFreeResources} />
     </MainLayout>
   );
 }
