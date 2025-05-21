@@ -1,32 +1,23 @@
-import type { NormalizedCacheObject } from "@apollo/client";
-import { GetServerSidePropsResult } from "next";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { freeTutorialsQuery } from "~/gql/queries";
-import { createApolloClient } from "~/lib/apollo-client";
 import { FreeTutorialsScreen } from "~/screens/free-tutorials";
 
-interface FreeTutorialsPageProps {
-  apolloClientState: NormalizedCacheObject;
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: false,
+      staleTime: 30000,
+    },
+  },
+});
 
 function FreeTutorialsPage() {
-  return <FreeTutorialsScreen />;
-}
-
-export async function getServerSideProps(): Promise<
-  GetServerSidePropsResult<FreeTutorialsPageProps>
-> {
-  const client = createApolloClient();
-
-  await client.query({
-    query: freeTutorialsQuery,
-  });
-
-  return {
-    props: {
-      apolloClientState: client.cache.extract(),
-    },
-  };
+  return (
+    <QueryClientProvider client={queryClient}>
+      <FreeTutorialsScreen />
+    </QueryClientProvider>
+  );
 }
 
 export default FreeTutorialsPage;

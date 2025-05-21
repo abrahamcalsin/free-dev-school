@@ -1,32 +1,21 @@
-import type { NormalizedCacheObject } from "@apollo/client";
-import { GetServerSidePropsResult } from "next";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { moreFreeResourcesQuery } from "~/gql/queries";
-import { createApolloClient } from "~/lib/apollo-client";
 import { MoreFreeResourcesScreen } from "~/screens/more-free-resources";
 
-interface MoreFreeResourcesPageProps {
-  apolloClientState: NormalizedCacheObject;
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 function MoreFreeResourcesPage() {
-  return <MoreFreeResourcesScreen />;
-}
-
-export async function getServerSideProps(): Promise<
-  GetServerSidePropsResult<MoreFreeResourcesPageProps>
-> {
-  const client = createApolloClient();
-
-  await client.query({
-    query: moreFreeResourcesQuery,
-  });
-
-  return {
-    props: {
-      apolloClientState: client.cache.extract(),
-    },
-  };
+  return (
+    <QueryClientProvider client={queryClient}>
+      <MoreFreeResourcesScreen />
+    </QueryClientProvider>
+  );
 }
 
 export default MoreFreeResourcesPage;

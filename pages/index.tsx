@@ -1,32 +1,24 @@
-import { NormalizedCacheObject } from "@apollo/client";
-import type { GetServerSidePropsResult, NextPage } from "next";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import type { NextPage } from "next";
 
-import { freeCoursesQuery } from "~/gql/queries";
-import { createApolloClient } from "~/lib/apollo-client";
 import { HomeScreen } from "~/screens/home";
 
-interface HomeProps {
-  apolloClientState: NormalizedCacheObject;
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: false,
+      staleTime: 30000,
+    },
+  },
+});
 
 const Home: NextPage = () => {
-  return <HomeScreen />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <HomeScreen />
+    </QueryClientProvider>
+  );
 };
-
-export async function getServerSideProps(): Promise<
-  GetServerSidePropsResult<HomeProps>
-> {
-  const client = createApolloClient();
-
-  await client.query({
-    query: freeCoursesQuery,
-  });
-
-  return {
-    props: {
-      apolloClientState: client.cache.extract(),
-    },
-  };
-}
 
 export default Home;
