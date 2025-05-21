@@ -1,22 +1,23 @@
-import { useQuery } from "@apollo/client";
 import { Alert, AlertIcon, AlertTitle, Spinner } from "@chakra-ui/react";
+import { useQuery } from "@tanstack/react-query";
 
 import { Introduction } from "~/components/introduction";
 import Meta from "~/components/meta";
-import { freeTutorialsQuery } from "~/gql/queries";
 import { MainLayout } from "~/layouts";
-import { FreeTutorialsQueryResponsePayload } from "~/typings/free-tutorials";
+import { getFreeTutorials } from "~/services/free-tutorials";
 
 import { Content } from "./components/content";
 import { FreeTutorialsSearchBox } from "./components/free-tutorials-search-box";
 
 export function FreeTutorialsScreen() {
-  const { loading, data, error } =
-    useQuery<FreeTutorialsQueryResponsePayload>(freeTutorialsQuery);
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["freeTutorials"],
+    queryFn: getFreeTutorials,
+  });
 
-  const freeTutorials = data?.freeTutorials ?? [];
+  const freeTutorials = data ?? [];
 
-  if (loading) {
+  if (isLoading) {
     return (
       <MainLayout>
         <Spinner size="lg" />
@@ -44,8 +45,8 @@ export function FreeTutorialsScreen() {
         tutoriales de programación gratuitos."
         titleCount={freeTutorials.length}
       />
-      <FreeTutorialsSearchBox />
-      <Content />
+      <FreeTutorialsSearchBox data={freeTutorials} />
+      <Content data={freeTutorials} />
     </MainLayout>
   );
 }
