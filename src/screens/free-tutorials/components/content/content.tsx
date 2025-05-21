@@ -1,18 +1,15 @@
 import Masonry from "react-masonry-css";
-import { useQuery } from "@apollo/client";
 
 import { SocialMediaIcon } from "~/components/social-media-icon";
 import { VideoCard } from "~/components/video-card";
-import { freeTutorialsQuery } from "~/gql/queries";
-import { FreeTutorialsQueryResponsePayload } from "~/typings/free-tutorials";
+import { FreeTutorialResponsePayload } from "~/typings/free-tutorials";
 
-export function Content() {
-  const { data } = useQuery<FreeTutorialsQueryResponsePayload>(
-    freeTutorialsQuery,
-    { fetchPolicy: "cache-only" }
-  );
+interface ContentProps {
+  data: FreeTutorialResponsePayload[];
+}
 
-  const freeTutorials = data?.freeTutorials ?? [];
+export function Content({ data }: ContentProps) {
+  const freeTutorials = data ?? [];
 
   const breakpointColumns = {
     default: 4,
@@ -31,14 +28,14 @@ export function Content() {
         return (
           <VideoCard
             key={freeTutorial.id}
-            channelName={freeTutorial.tutorName}
-            videoName={freeTutorial.videoName}
-            videoId={freeTutorial.videoId}
-            src={freeTutorial.linkVideoThumbnail}
-            videoHost={freeTutorial.videoHost}
-            channelId={freeTutorial.tutorChannelId}
-            dateOfPublication={freeTutorial.dateOfPublication}
-            icon={<SocialMediaIcon type={freeTutorial.videoHost} />}
+            channelName={freeTutorial.tutor_name}
+            videoName={freeTutorial.video_name}
+            videoId={freeTutorial.video_id}
+            src={freeTutorial.link_video_thumbnail}
+            videoHost={freeTutorial.video_host}
+            channelId={freeTutorial.tutor_channel_id}
+            dateOfPublication={freeTutorial.date_of_publication}
+            icon={<SocialMediaIcon type={freeTutorial.video_host} />}
           />
         );
       })}

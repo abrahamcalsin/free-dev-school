@@ -1,36 +1,33 @@
-import { useQuery } from "@apollo/client";
 import { Box } from "@chakra-ui/react";
 
 import { DateFormat } from "~/components/date-format";
 import { SearchBox, SearchBoxResultItem } from "~/components/search-box";
 import { SocialMediaIcon } from "~/components/social-media-icon";
-import { freeTutorialsQuery } from "~/gql/queries";
-import { FreeTutorialsQueryResponsePayload } from "~/typings";
+import { FreeTutorialResponsePayload } from "~/typings";
 
-export function FreeTutorialsSearchBox() {
-  const { data } = useQuery<FreeTutorialsQueryResponsePayload>(
-    freeTutorialsQuery,
-    { fetchPolicy: "cache-only" }
-  );
+interface FreeTutorialsSearchBoxProps {
+  data: FreeTutorialResponsePayload[];
+}
 
-  const freeTutorials = data?.freeTutorials ?? [];
+export function FreeTutorialsSearchBox({ data }: FreeTutorialsSearchBoxProps) {
+  const freeTutorials = data ?? [];
 
   return (
     <Box my={{ base: "8", sm: "14" }}>
       <SearchBox
         data={freeTutorials}
-        filter="videoName"
+        filter="video_name"
         placeholder="Buscar tutorial por tecnologia..."
         renderResultItem={(freeTutorial) => {
           const href =
-            freeTutorial.videoHost === "youtube"
-              ? `https://www.youtube.com/watch?v=${freeTutorial.videoId}`
-              : `https://www.twitch.tv/videos/${freeTutorial.videoId}`;
+            freeTutorial.video_host === "youtube"
+              ? `https://www.youtube.com/watch?v=${freeTutorial.video_id}`
+              : `https://www.twitch.tv/videos/${freeTutorial.video_id}`;
 
           const description = (
             <>
-              {freeTutorial.tutorName} |{" "}
-              <DateFormat date={freeTutorial.dateOfPublication} />
+              {freeTutorial.tutor_name} |{" "}
+              <DateFormat date={freeTutorial.date_of_publication} />
             </>
           );
 
@@ -38,9 +35,9 @@ export function FreeTutorialsSearchBox() {
             <SearchBoxResultItem
               key={freeTutorial.id}
               href={href}
-              label={freeTutorial.videoName}
+              label={freeTutorial.video_name}
               description={description}
-              icon={<SocialMediaIcon type={freeTutorial.videoHost} />}
+              icon={<SocialMediaIcon type={freeTutorial.video_host} />}
             />
           );
         }}
